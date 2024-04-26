@@ -1,25 +1,57 @@
-body{
+body {
     background-color: #131316;
     color: #ffffff;
     padding: 0;
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
 }
-section{
+
+section {
     display: grid;
     place-items: center;
     align-content: center;
-    min-height: 100vh;
+    margin-bottom: 50vh;
+    border: solid white;
+    min-height: 70vh;
+    padding: 5vw;
+    transition: all 2s;
+    gap: 1vmin;
 }
 
-.hidden{
-    opacity: 0;
+.hidden-blur {
     filter: blur(5px);
     transform: translateX(-100%);
-    transition:all 1s;
+    transition: all 1s;
 }
-.show{
-    opacity: 1;
-    filter: blur(0);
-    transform: translate(0);
+
+.hidden-color {
+    background-color: darkolivegreen;
+    transition: background-color 0.1s ease;
+}
+
+.hidden-font {
+    filter: blur(20px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+
+@keyframes move {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(100px, 100px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* Apply the animation to the circle */
+.animate-circle {
+    animation: move 3s infinite;
+    fill: blue;
 }
