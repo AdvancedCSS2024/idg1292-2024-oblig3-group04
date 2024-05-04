@@ -3,31 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Container Animation with Intersection Observer</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
-    <title>Document</title>
   </head>
   <body>
-    <main>
-      <div class="viewport">
-        <section data-hidden="hidden-blur" class="hidden-blur">
-          <h1>HELLO WORLD</h1>
-          <p>This is a test</p>
-        </section>
+    <div class="main">
+      <div class="container">
+        <div class="fill">
+        </div>
         
-        <svg width="200" height="200">
-          <circle class="moving-circle" cx="100" cy="100" r="50"></circle>
-        </svg>
-        
-        <section data-hidden="hidden-color" class="hidden-color">
-          <h2>Enviroment = important</h2>
-          <p>Hot takes</p>
-        </section>
-  
-        <section data-hidden="hidden-font" class="hidden-font">
-          <h2>Fooooooooter</h2>
-        </section>
+        <div class="image-wrapper">
+          <img
+            class="open-box"
+            src="images/container-opened.svg"
+            alt="Opened Container"
+          />
+          <div class="animate left-door">
+            <img src="images/container-door-left.svg" alt="" />
+          </div>
+          <div class="animate right-door">
+            <img src="images/container-door-right.svg" alt="" />
+          </div>
+        </div>
+
       </div>
-    </main>
+    </div>
   </body>
 </html>

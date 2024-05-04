@@ -1,26 +1,21 @@
-const options = {
-  rootMargin: "20%",
-};
-
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    // Check if the element is an SVG circle and has the 'moving-circle' class
-    if (entry.target.tagName === 'circle' && entry.target.classList.contains('moving-circle')) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("animate-circle"); // Add animation class when in view
+    // Handle elements using the Intersection Observer
+    
+    if (entry.target.className === "animate left-door") {
+        entry.target.classList.add("animation-left"); // Add animation class when in view
       } else {
-        entry.target.classList.remove("animate-circle"); // Remove animation class when out of view
+        entry.target.classList.remove("animation-left"); // Remove animation class when out of view
       }
-    } else {
-      // Handle other elements using the Intersection Observer
-      if (entry.isIntersecting) {
-        entry.target.classList.remove(entry.target.dataset.hidden);
+
+      if (entry.target.className === "animate right-door") {
+        entry.target.classList.add("animation-right"); // Add animation class when in view
       } else {
-        entry.target.classList.add(entry.target.dataset.hidden);
+        entry.target.classList.remove("animation-right"); // Remove animation class when out of view
       }
     }
-  });
-}, options);
+  );
+},)
 
-const observedElements = document.querySelectorAll("[data-hidden], .moving-circle");
+const observedElements = document.querySelectorAll(".animate");
 observedElements.forEach((el) => observer.observe(el));
