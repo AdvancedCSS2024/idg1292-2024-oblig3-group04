@@ -1,6 +1,6 @@
 @keyframes slideLeft {
   0% {
-    transform: translateX(15vw);
+    transform: translateX(10vw);
     opacity: 0;
   }
   100% {
@@ -10,7 +10,7 @@
 }
 @keyframes slideRight {
   0% {
-    transform: translateX(17.5vw);
+    transform: translateX(22.8vw);
     opacity: 0;
   }
   100% {
@@ -41,35 +41,35 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-}
-
-.image-wrapper {
-  position: relative;
+  background-color: #009dc4;
 }
 
 .fill {
   height: 400px;
 }
 
+.box-wrap {
+  position: relative;
+  margin-bottom: 60vw;
+}
+
 .open-box {
+  position: absolute;
   width: 50vw;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .left-door {
   position: absolute;
   width: 14vw;
   left: 23.5vw;
-  top: 22.7vw;
+  top: 22.8vw;
 }
 
 .right-door {
   position: absolute;
   width: 14vw;
   right: 34.5vw;
-  top: 22.6vw;
+  top: 22.8vw;
 }
 
 .animation-left {
@@ -81,19 +81,22 @@ body {
 }
 
 .ship-container {
-  position: relative;
+  position: absolute;
+  margin-top: 10px;
   width: 100%;
-  height: 100%;
-  background-color: #009dc4;
+  height: 100vh;
   overflow: hidden;
 }
 
 .ship-top {
+  z-index: 3;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50vw;
-  height: 50vw;
+  position: absolute;
+  top: 4vw;
+  left: 25vw;
 }
 
 .waterflow {
@@ -141,4 +144,12 @@ body {
 .waterflow-bottomleft {
   top: 2vw;
   left: 54vw;
+}
+
+.fish {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vw;
+  margin-bottom: 30px;
 }/*# sourceMappingURL=styles.css.map */

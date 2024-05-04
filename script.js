@@ -1,6 +1,5 @@
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    // Handle elements using the Intersection Observer
     if (entry.isIntersecting) {
       if (entry.target.classList.contains("left-door")) {
         entry.target.classList.add("animation-left"); // Add animation class for left door when in view
