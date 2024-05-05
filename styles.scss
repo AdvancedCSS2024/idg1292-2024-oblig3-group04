@@ -49,10 +49,10 @@
 html,
 body {
     height: 100%;
-    width: 100%;
     margin: 0;
     padding: 0;
     background-color: #009dc4;
+    overflow-x: hidden;
 }
 
 .fill {
@@ -153,22 +153,14 @@ body {
 .fish {
     width: 45vw;
     margin-top: 100vw;
+    z-index: 10;
 }
 // First scene boat and background styles
 .boat {
     width: 32vw;
 }
 
-.sky,
-.water {
-    width: 100%;
-}
 
-.sky-wrapper,
-.water-wrapper,
-.boat-wrapper {
-    position: relative;
-}
 .sky,
 .water,
 .boat {
@@ -176,36 +168,53 @@ body {
 }
 
 .boat {
-    z-index: 10;
-    top: 65vw;
-}
-.sky-one {
-    z-index: 1;
-}
-.sky-two {
-    z-index: 3;
-}
-.sky-three {
-    z-index: 4;
-    top: 15vw;
-}
-.sky-four {
-    z-index: 2;
-    top: 15vw;
+    z-index: 7;
+    top: 95vw;
+    left: 30vw
 }
 
-.water-one {
-    z-index: 2;
-    top: 83vw;
-}
-.water-two {
-    z-index: 1;
-    top: 75vw;
-}
-.water-three {
-    top: 70vw;
+.sky {
+    width: 120%;
+    &-one {
+        z-index: 4;
+    }
+    &-two {
+        z-index: 3;
+        top: 80vw;
+    }
+    &-three {
+        z-index: 2;
+        top: 85vw;
+    }
+    &-four {
+        z-index: 1;
+        top: 90vw;
+    }
 }
 
-.boatAnimation {
-    animation: boatAnimation 10s infinite ease;
+.water {
+
+    width: 120%;
+    &-one {
+        z-index: 9;
+        top: 119vw;
+    }
+    &-two {
+        z-index: 8;
+        top: 110vw;
+    }
+    &-three {
+        top: 104vw;
+        z-index: 6;
+    }
+
+    &-four {
+        z-index: 5;
+        top:99vw;
+    }    
 }
+
+
+// .boatAnimation {
+//     animation: boatAnimation 10s infinite ease;
+// }
