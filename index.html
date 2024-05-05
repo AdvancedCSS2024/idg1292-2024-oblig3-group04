@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Container Animation with Intersection Observer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="image-wrapper">
+        <div class="scene-one">
+          <div class="boat-container">
+            <div class="sky-wrapper">
+              <img class="sky sky-one" src="/images/sky-one.svg" alt="" />
+              <img class="sky sky-two" src="/images/sky-two.svg" alt="" />
+              <img class="sky sky-three" src="/images/sky-three.svg" alt="" />
+              <img class="sky sky-four" src="/images/sky-four.svg" alt="" />
+            </div>
+
+            <div class="boat-wrapper">
+              <img class="animate boat" src="/images/fishingboat.svg" alt="" />
+            </div>
+
+            <div class="water-wrapper">
+              <img class="water water-one" src="/images/water-one.svg" alt="" />
+              <img class="water water-two" src="/images/water-two.svg" alt="" />
+              <img class="water water-three" src="/images/water-three.svg" alt=""/>
+              <img class="water water-four" src="/images/water-four.svg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="fish-wrap">
+          <div class="fish-box">
+            <img class="fish" src="/images/fishbox.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="box-wrap">
+          <div class="box-container">
+            <img
+              class="open-box"
+              src="images/container-opened.svg"
+              alt="Opened Container"
+            />
+            <img
+              class="animate left-door"
+              src="images/container-door-left.svg"
+              alt=""
+            />
+            <img
+              class="animate right-door"
+              src="images/container-door-right.svg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="container-wrap">
+          <div class="ship-container">
+            <img class="ship-top" src="/images/ship-topdown.svg" alt="" />
+            <img
+              class="animate waterflow waterflow-topleft"
+              src="/images/waterflow.svg"
+              alt=""
+            />
+            <img
+              class="animate waterflow waterflow-topmiddle"
+              src="/images/waterflow.svg"
+              alt=""
+            />
+            <img
+              class="animate waterflow waterflow-topright"
+              src="/images/waterflow.svg"
+              alt=""
+            />
+            <img
+              class="animate waterflow waterflow-rightmiddle"
+              src="/images/waterflow.svg"
+              alt=""
+            />
+            <img
+              class="animate waterflow waterflow-right"
+              src="/images/waterflow.svg"
+              alt=""
+            />
+            <img
+              class="animate waterflow waterflow-bottomright"
+              src="/images/waterflow.svg"
+              alt=""
+            />
+            <img
+              class="animate waterflow waterflow-bottommiddle"
+              src="/images/waterflow.svg"
+              alt=""
+            />
+            <img
+              class="animate waterflow waterflow-bottomleft"
+              src="/images/waterflow.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
