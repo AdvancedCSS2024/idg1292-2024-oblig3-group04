@@ -1,19 +1,25 @@
 html,body{
     margin: 0;
+    height: 100%;
 }
-:root{
-    --water-blue: #009dc4;
-    --factory-green: #3b8ca0;
-}
-.main{
-    background-color: var(--water-blue);
-    height: 90vw;
+
+.main {
+    background: linear-gradient(to bottom, #009dc4 0%, #009dc4 70%, #1c5b6a 100%);
+    height: 100vw;
     position: relative;
+    background-blend-mode: hue;
 }
+
 .section1{
-    background-color: var(--factory-green);
-    height: 90vw;
+    background-color: #1c5b6a;
+    height: 100vw;
     position: relative;
+}
+.section2{
+    background: linear-gradient(to bottom,#1c5b6a 5%,#009dc4 30%, #009dc4 0%);
+    height: 100vw;
+    position: relative;
+    background-blend-mode: hue;
 }
 
 .world,
@@ -30,15 +36,45 @@ html,body{
     position: absolute;
 }
 
+@keyframes fishAnimation{
+    0%{
+        right: 12%;
+        opacity: 1;
+    }
+    50% {
+        top: 40vw;
+        right: 40%;
+        opacity: 0;
+    }
+    100% {
+        top: 40vw;
+        right: 40%;
+        opacity: 0;
+    }
+}
+@keyframes fishPackageAnimation {
+    0% {
+        top: 40vw; /* Starting position */
+        opacity: 0;
+        left:30%;
+    }
+    100% {
+        top: 63vw; /* Final position */
+        opacity: 1;
+        left:6%;
+    }
+}
 .fish-rullebånd{
    max-width:27%;
    top:43.5vw;
    right: 12%;
+   animation: fishAnimation 10s linear infinite;
 }
 .fish-package{
     max-width:4%;
     top: 50vw;
     left: 21%;
+    animation: fishPackageAnimation 6s linear infinite;
 }
 
 .rullebånd-maskin{
