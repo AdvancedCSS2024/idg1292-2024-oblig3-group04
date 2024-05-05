@@ -132,3 +132,93 @@ body {
     top: 2vw;
     left: 54vw;
 }
+
+/*siste endringer jeg har lagt til - modesta */
+.frame {
+    height: 1209px; /*måtte gi height fordi hvis ikke kollapse alt pga abosluite psotioning*/
+  }
+  .frame-bckg {
+    background-color: #009dc4;
+  }
+  
+  .frame-bckg-grey {
+    background-color: grey;
+  }
+  .frame-bckg--lightBlue {
+    background-color: #3b8ca0;
+  }
+  
+  /*frame - ship stacked up with containers*/
+  .ship__topdown {
+    width: 50vw;
+  }
+  
+  /*container - doors open and close frame */
+  .image-wrapper {
+    position: relative;
+  }
+  
+  .fill {
+    height: 400px;
+  }
+  
+  .open-box {
+    width: 50vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .door {
+    position: absolute;
+    width: 14vw;
+  }
+  .door__left {
+    left: 23.5vw;
+    top: 112.7vw;
+    animation: slideLeft 3s infinite ease;
+  }
+  .door__right {
+    right: 34.5vw;
+    top: 112.6vw;
+    animation: slideRight 3s infinite ease;
+  }
+  
+  /*fishbox - frame*/
+  .fish-box {
+    width: 20vw;
+  }
+  
+  /*frame for world map*/
+  .container__worldMap {
+    position: relative;
+  }
+  
+  .container__wrapper-worldMap > img {
+    position: absolute;
+  }
+  
+  .circle__small {
+    width: 3%;
+  }
+  
+  .circle__large {
+    width: 4%;
+  }
+  
+  .container__boat {
+    width: 10%;
+  }
+  
+  .path {
+    width: 60%;
+    fill: none;
+    stroke: #000;
+    stroke-miterlimit: 30;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .frame {
+      height: 400px; /*måtte gi height fordi hvis ikke kollapse alt pga abosluite psotioning*/
+    }
+  }/*# sourceMappingURL=styles.css.map */
