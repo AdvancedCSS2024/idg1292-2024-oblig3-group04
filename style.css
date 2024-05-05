@@ -1,0 +1,71 @@
+html,body{
+    margin: 0;
+}
+:root{
+    --water-blue: #009dc4;
+    --factory-green: #3b8ca0;
+}
+.main{
+    background-color: var(--water-blue);
+    height: 90vw;
+    position: relative;
+}
+.section1{
+    background-color: var(--factory-green);
+    height: 90vw;
+    position: relative;
+}
+
+.world,
+.world2{
+    top: 5%;
+}
+
+.circle,
+.path,
+.world,
+.world2,
+.fish-rullebånd,
+.fish-package{
+    position: absolute;
+}
+
+.fish-rullebånd{
+   max-width:27%;
+   top:43.5vw;
+   right: 12%;
+}
+.fish-package{
+    max-width:4%;
+    top: 50vw;
+    left: 21%;
+}
+
+.rullebånd-maskin{
+    margin: 2%;
+    position: absolute;
+    max-width: 100vw;
+    left: 2%;
+    top: 20vw;
+}
+.circle1,
+.circle3{
+    width: 2%;
+    top: 16vw;
+    left: 12%;
+}
+.circle2,
+.circle4{
+    z-index: 1;
+    width: 3%;
+    top: 39vw;
+    right: 22%;
+}
+
+.path{
+    max-width: 100vw;
+    top: 18vw;
+    left: 2%;
+    z-index: 2;
+}
+
