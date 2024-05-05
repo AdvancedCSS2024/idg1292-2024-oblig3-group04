@@ -35,6 +35,14 @@
     transform: translateY(0);
   }
 }
+@keyframes boatAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(64vw);
+  }
+}
 html,
 body {
   height: 100%;
@@ -103,6 +111,9 @@ body {
   width: 10vw;
   z-index: 2;
   position: absolute;
+}
+
+.squiggle {
   animation: squiggle 2s infinite ease;
 }
 
@@ -147,9 +158,68 @@ body {
 }
 
 .fish {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50vw;
-  margin-bottom: 30px;
+  width: 45vw;
+  margin-top: 100vw;
+}
+
+.boat {
+  width: 32vw;
+}
+
+.sky,
+.water {
+  width: 100%;
+}
+
+.sky-wrapper,
+.water-wrapper,
+.boat-wrapper {
+  position: relative;
+}
+
+.sky,
+.water,
+.boat {
+  position: absolute;
+}
+
+.boat {
+  z-index: 10;
+  top: 65vw;
+}
+
+.sky-one {
+  z-index: 1;
+}
+
+.sky-two {
+  z-index: 3;
+}
+
+.sky-three {
+  z-index: 4;
+  top: 15vw;
+}
+
+.sky-four {
+  z-index: 2;
+  top: 15vw;
+}
+
+.water-one {
+  z-index: 2;
+  top: 83vw;
+}
+
+.water-two {
+  z-index: 1;
+  top: 75vw;
+}
+
+.water-three {
+  top: 70vw;
+}
+
+.boatAnimation {
+  animation: boatAnimation 10s infinite ease;
 }/*# sourceMappingURL=styles.css.map */
