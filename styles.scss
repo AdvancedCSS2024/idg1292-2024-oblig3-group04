@@ -38,7 +38,7 @@
 }
 
 
-
+/*general overall layout*/
 html,
 body {
     height: 100%;
@@ -46,38 +46,23 @@ body {
     margin: 0;
     padding: 0;
 }
-.image-wrapper {
-    position: relative;
-}
-.fill {
-    height: 400px;
-}
-.open-box {
-    width: 50vw;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.left-door {
-    position: absolute;
-    width: 14vw;
-    left: 23.5vw;
-    top: 22.7vw;
-}
-.right-door {
-    position: absolute;
-    width: 14vw;
-    right: 34.5vw;
-    top: 22.6vw;
-}
-.animation-left {
-    animation: slideLeft 3s infinite ease;
-}
-.animation-right {
-    animation: slideRight 3s infinite ease;
-}
+.frame {
+    height: 1209px; /*måtte gi height fordi hvis ikke kollapse alt pga abosluite psotioning*/
+  }
+  .frame-bckg {
+    background-color: #009dc4;
+  }
+  
+  .frame-bckg-grey {
+    background-color: grey;
+  }
+  .frame-bckg--lightBlue {
+    background-color: #3b8ca0;
+  }
 
-.ship-container {
+  
+  /*frame - ship stacked up with containers*/
+  .ship-container {
     position: relative;
     width: 100%;
     height: 100%;
@@ -98,60 +83,40 @@ body {
     z-index: 2;
     position: absolute;
     animation: squiggle 2s infinite ease;
-}
 
-.waterflow-topleft {
-    top: 17vw;
-    left: 27vw;
-}
-.waterflow-topmiddle {
-    top: 11vw;
+    &-topleft{
+      top: 17vw;
+      left: 27vw;
+    }
+    &-topmiddle{
+      top: 11vw;
     left: 41vw;
-}
-.waterflow-rightmiddle {
-    top: 4vw;
+    }
+    &-rightmiddle{
+      top: 4vw;
     left: 73vw;
-}
-.waterflow-topright {
-    top: 11vw;
+    }
+    &-topright{
+      top: 11vw;
     left: 76vw;
-}
-.waterflow-right {
-    top: 24vw;
-    left: 75vw;
-}
-.waterflow-bottomright {
-    top: 33vw;
+    }
+    &-right{
+      top: 24vw;
+      left: 75vw;
+    }
+    &-bottomright{
+      top: 33vw;
     left: 65vw;
+    }
+    &-bottommiddle{
+      top: 37vw;
+      left: 53vw;
+    }
+    &-bottomleft{
+      top: 2vw;
+      left: 54vw;
+    }
 }
-.waterflow-bottommiddle {
-    top: 37vw;
-    left: 53vw;
-}
-.waterflow-bottomleft {
-    top: 2vw;
-    left: 54vw;
-}
-
-/*siste endringer jeg har lagt til - modesta */
-.frame {
-    height: 1209px; /*måtte gi height fordi hvis ikke kollapse alt pga abosluite psotioning*/
-  }
-  .frame-bckg {
-    background-color: #009dc4;
-  }
-  
-  .frame-bckg-grey {
-    background-color: grey;
-  }
-  .frame-bckg--lightBlue {
-    background-color: #3b8ca0;
-  }
-  
-  /*frame - ship stacked up with containers*/
-  .ship__topdown {
-    width: 50vw;
-  }
   
   /*container - doors open and close frame */
   .image-wrapper {
@@ -168,7 +133,6 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  
   .door {
     position: absolute;
     width: 14vw;
