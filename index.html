@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Container Animation with Intersection Observer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script> 
+  </head>
+  <body>
+
+  <main class="main">
+    <div class="main__container">
+      <div class="main__container-wrap">
+
+        <section class="frame" id="fishBoat">
+          <div class="container">
+            <div class="container-wrapper">
+              <div class="sky-container">
+                <img src="assets/svg-marius/sky-one.svg" alt="sky">
+                <img src="assets/svg-marius/sky-two.svg" alt="sky">
+                <img src="assets/svg-marius/sky-three.svg" alt="sky">
+                <img src="assets/svg-marius/sky-four.svg" alt="sky">
+              </div>
+              <img src="assets/svg-marius/fishingboat.svg" alt="fishing boat">
+              <div class="water-container">
+                <img src="assets/svg-marius/water-one.svg" alt="water wave">
+                <img src="assets/svg-marius/water-two.svg" alt="water wave">
+                <img src="assets/svg-marius/water-three.svg" alt="water wave">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="frame frame-bckg-grey" id="fish-on-land">
+          <div class="container">
+            <div class="container-wrapper">
+              <img class="fish-box" src="assets/SVG/fishbox.svg" alt="box with fish inside">
+            </div>
+          </div>
+        </section>
+
+        <section class="frame" id="container-open-closed">
+
+            <div class="image-wrapper">
+             <img class="open-box" src="assets/SVG/container-opened.svg" alt="Opened Container"/>
+            </div>
+
+            <div class="openbox door door__left">
+             <img src="assets/SVG/container-door-left.svg" alt="door-left" />
+           </div>
+
+            <div class="openbox door door__right">
+             <img src="assets/SVG/container-door-right.svg" alt="door-right" />
+           </div>
+        </section>
+
+        <section class="frame frame-bckg" id="container-in-boat">
+          <div class="contianer">
+            <div class="ship-container" >
+              <img class="ship-top" src="assets/SVG/ship-topdown.svg" alt="image of a ship with containers">
+              <img class="waterflow waterflow-topleft" src="assets/SVG/waterflow.svg" alt="water wave">
+              <img class="waterflow waterflow-topmiddle" src="assets/SVG/waterflow.svg" alt="water wave">
+              <img class="waterflow waterflow-topright" src="assets/SVG/waterflow.svg" alt="water wave">
+              <img class="waterflow waterflow-rightmiddle" src="assets/SVG/waterflow.svg" alt="water wave">
+              <img class="waterflow waterflow-right" src="assets/SVG/waterflow.svg" alt="water wave">
+              <img class="waterflow waterflow-bottomright" src="assets/SVG/waterflow.svg" alt="water wave">
+              <img class="waterflow waterflow-bottommiddle" src="assets/SVG/waterflow.svg" alt="water wave">
+              <img class="waterflow waterflow-bottomleft" src="assets/SVG/waterflow.svg" alt="water wave">
+            </div>
+          </div>
+        </section>
+
+        <section class="frame frame-bckg" id="worldMap-norway-to-china">
+          <div class="container container__worldMap">
+            <div class="container-wrapper container__wrapper-worldMap">
+              <img src="assets/SVG/world-map.svg" alt="world map">
+              <img class="circle circle__small" src="assets/SVG/circle-destination-for-Norway.svg" alt="">
+              <img class="circle circle__large" src="assets/SVG/cirle-distination-for_china.svg" alt="">
+              <img class="container__boat" src="assets/SVG/boat.svg" alt="">
+              <img class="path2" src="assets/SVG/path-line-and-triangles-A-B.svg" alt="">
+            </div>
+          </div>
+        </section>
+
+        <section class="frame frame-bckg--lightBlue" id="factory">
+          <div class="container">
+            <div class="container-wrapper">
+              <img src="assets/SVG/rullebånd.svg" alt="">
+            </div>
+          </div>
+        </section>
+
+        <section class="frame frame-bckg" id="wolrdMap-chrina-to-norway">
+          <div class="container container__worldMap">
+            <div class="container-wrapper container__wrapper-worldMap ">
+              <img src="assets/SVG/world-map.svg" alt="world map">
+              <img class="circle circle__small" src="assets/SVG/circle-destination-for-Norway.svg" alt="blue circle">
+              <img class="circle circle__large" src="assets/SVG/cirle-distination-for_china.svg" alt="blue circle">
+              <img class="container__boat" src="assets/SVG/boat.svg" alt="boat with contianers in it">
+              
+<svg class="path" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 979.38 532.23">
+    <g id="path-line-and-triangles-B-A">
+      <g id="path-linje">
+        <path class="cls-1" d="M125.53.41c-6.66,4.62-13.89,10.52-21,18-21.2,22.33-13.57,44.31-34,62-7.72,6.68-8.51,3.67-21.5,13.5-5.92,4.48-19.28,14.75-30,31-7.9,11.97-23.46,35.56-17,63,1.37,5.82,7.12,26.19,25,37,27.04,16.34,49.44-8.78,107-11,41.4-1.6,73.96,9.66,95,17,32.02,11.16,54.44,18.98,75,39,16.53,16.1,14.93,23.6,56,109,17.93,37.29,27.57,55.26,47,61,15.19,4.49,30.07-.36,40-5,13.18-2.81,32.67-5.65,56-4,22.41,1.58,42.76,6.91,92,28,25.41,10.88,57.85,25.68,95,45,26.02,11.76,87.03,34.88,161,20,33.78-6.79,92.99-18.7,117-66,24.66-48.58,4.48-119.34-51-173"/>
+      </g>
+</svg>
+            </div>
+          </div>
+        </section>
+
+        <section class="frame" id="grocery shop">
+          <div class="container">
+            <div class="conatainer-wrapper">
+              <img src="assets/SVG/butikk.svg" alt="grocery shop">
+            </div>
+          </div>
+        </section>
+
+        <section class="frame" id="fish-counter-at-the-shop">
+          <div class="container">
+            <div class="container-wrapper">
+              <img src="assets/svg-marius/store-bottom.svg" alt="store shelf">
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+    
+  </body>
+</html>

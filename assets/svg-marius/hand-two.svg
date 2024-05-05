@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 395.12 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f4d3c1;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #e5c3b5;
+      }
+
+      .cls-3 {
+        fill: #eacec1;
+      }
+    </style>
+  </defs>
+  <g id="hand2">
+    <g id="Hand2">
+      <path class="cls-3" d="M0,10.61L38.12,0l103,12s.5,24,23.5,50l19,45-128.5,7s-27.06-46.37-27.81-47.16C5.62,44,0,10.61,0,10.61Z"/>
+      <polygon class="cls-1" points="183.62 107 192.62 136 395.12 500 92.81 500 55.12 114 183.62 107"/>
+      <polygon class="cls-2" points="55.62 120 21.62 69 7.62 36 26.62 66 55.62 114 55.62 120"/>
+    </g>
+  </g>
+</svg>
