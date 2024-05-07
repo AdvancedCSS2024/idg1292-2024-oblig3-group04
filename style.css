@@ -61,15 +61,15 @@ html,body{
 
   /*første scene til marius*/
   .main-section{
-    height: 100vw;
-    border: 2px solid black;
+    height: 98.5vw;
   }
  .section3{ /*problems with this scene*/
     position: relative;
     max-width: 100%;
+    height: 98.5vw;
     overflow-x: hidden;
-    border: 2px solid red;
  }
+
  .boat {
     width: 32vw;
   }
@@ -98,53 +98,53 @@ html,body{
   }
   .sky-two {
     z-index: 3;
-    top: 43vw;
+    top: 41vw;
   }
   .sky-three {
     z-index: 2;
-    top: 49vw;
+    top: 46vw;
   }
   .sky-four {
     z-index: 1;
-    top: 54vw;
+    top: 50vw;
   }
   .water-four {
     z-index: 5;
-    top: 66vw;
+    top: 61vw;
   }
   .water-three {
-    top: 72vw;
+    top: 68vw;
     z-index: 6;
   }
   .water-two {
     z-index: 8;
-    top: 77vw;
+    top: 75vw;
   }
   .water-one {
     z-index: 9;
-    top: 85vw;
+    top: 82.8vw;
   }
- /*end of scene 1*/
-  
- /* 2 scene til jakub*/
- .section4{
-  background: linear-gradient(to bottom, #6161D1 6%, grey 23%, grey 0%);
-    position: relative;
-    height: 100vw;
-    top: 0.01vw;
- }
- .fish {
-    position: absolute;
-    width: 50vw;
-    top: 37vw;
-    left: 22vw;
-  }
+
+  /*scene 2*/
+  .section4{
+    background: linear-gradient(to bottom, #6161D1 6%, grey 23%, grey 0%);
+      position: relative;
+      height: 100vh;
+      top: 0vw;
+      z-index: 1;
+   }
+   .fish {
+      position: absolute;
+      width: 50vw;
+      top: 37vw;
+      left: 22vw;
+    }
 /* end of scene 2*/
 
 /* scene 3 - jakub*/
 .section6{
     height: 115vw;
-    top: 0.01vw;
+    top: -1vw;
     position: relative;
     background: linear-gradient(to bottom, grey 4%, #c8bcc7 23%);
 }
@@ -182,7 +182,7 @@ html,body{
 .section7{
     height: 100vw;
     position: relative;
-    top: 0.01vw;
+    top: -1vw;
     background: linear-gradient(to bottom,#c8bcc7 1%,#009dc4 18%,#009dc4 0%);
 }
 .ship-container {
@@ -260,7 +260,7 @@ html,body{
     height: 100vw;
     position: relative;
     background-blend-mode: hue;
-    top: 0.01vw;
+    top: -1vw;
 }
     .world,
 .world2{
@@ -304,7 +304,7 @@ html,body{
     background-color: #1c5b6a;
     height: 100vw;
     position: relative;
-    top: 0.01vw;
+    top: -1vw;
 
 }
 @keyframes fishAnimation{
@@ -365,14 +365,14 @@ html,body{
     height: 101vw;
     position: relative;
     background-blend-mode: hue;
-    top: 0vw;
+    top: -1vw;
 }
 /*end opf scene of map*/
  
 /*scene 8 - grocery shop*/
 .section8{
 position: relative;
-top: 0.01vw;
+top: -1vw;
 }
 /*end of scene of shop*/
  
@@ -380,9 +380,8 @@ top: 0.01vw;
 /*scene 9 - inside grocery shop*/
 .section9{
     position: relative;
-    top: 0vw;
+    top: -2vw;
     max-width: 100%;
-    border: 2px solid black;
 }
 
 .hand-wrapper > img{
