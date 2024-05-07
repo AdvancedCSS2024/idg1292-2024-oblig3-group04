@@ -129,9 +129,10 @@ html,body{
   .section4{
     background: linear-gradient(to bottom, #6161D1 6%, grey 23%, grey 0%);
       position: relative;
-      height: 100vh;
+      height: 90vw;
       top: 0vw;
       z-index: 1;
+      border: 2px solid black;
    }
    .fish {
       position: absolute;
