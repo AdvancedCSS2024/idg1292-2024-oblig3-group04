@@ -69,14 +69,14 @@ body {
 .left-door {
   position: absolute;
   width: 14vw;
-  left: 23.5vw;
+  right: 85.5vw;
   top: 22.8vw;
 }
 
 .right-door {
   position: absolute;
   width: 14vw;
-  right: 34.5vw;
+  right: 59vw;
   top: 22.8vw;
 }
 
@@ -157,11 +157,6 @@ body {
   left: 54vw;
 }
 
-.fish {
-  width: 45vw;
-  margin-top: 100vw;
-}
-
 .boat {
   width: 32vw;
 }
@@ -184,8 +179,8 @@ body {
 }
 
 .boat {
-  z-index: 10;
-  top: 65vw;
+  z-index: 3;
+  top: 57vw;
 }
 
 .sky-one {
@@ -207,19 +202,19 @@ body {
 }
 
 .water-one {
-  z-index: 2;
-  top: 83vw;
+  z-index: 3;
+  top: 73vw;
 }
 
 .water-two {
-  z-index: 1;
-  top: 75vw;
+  z-index: 2;
+  top: 65vw;
 }
 
 .water-three {
-  top: 70vw;
+  top: 60vw;
 }
 
 .boatAnimation {
-  animation: boatAnimation 10s infinite ease;
+  animation: boatAnimation 10s 1 ease forwards;
 }/*# sourceMappingURL=styles.css.map */
