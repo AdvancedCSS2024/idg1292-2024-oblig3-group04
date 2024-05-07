@@ -1,6 +1,6 @@
 // Query DOM Elements for the second frame
 const path2 = document.querySelector('.path2'); // select the path for the second frame
-const boat2 = document.querySelector('.boat'); // select the boat for the second frame
+const boat2 = document.querySelector('.boat-china'); // select the boat for the second frame
 
 // Get the total length of the path for the second frame
 const totalLength2 = path2.getTotalLength();

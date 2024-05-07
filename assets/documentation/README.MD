@@ -5,9 +5,16 @@ Initially, we brainstormed and drew a storyboard to outline our story. We create
 
 
 2. animation part: 
-* sources: 
+Animation for boat follwoing path on the map: * sources i used to make boat follow a path: 
 - https://tympanus.net/codrops/2022/01/19/animate-anything-along-an-svg-path/ (using the points coordinates for moving the boat along)
 - https://www.npmjs.com/package/gsap (for quick CDN links)
+
+2.1 In the scene with the conveyor belt, i utilized keyframes to define two animations: 'FishAnimation' and 'fishPackageAnimation'. For both animations, I specified keyframes ranging from 0% to 100%, defining the movement path and opacity changes over time. 
+
+2.1.1 To animate the fish, I applied the 'fishAniamtion' to the fish element, setting the animation duration to 10 seconds and using linear timing function to ensure smooth movement. 
+
+2.1.2 To delay the appereance of the fish package, I initially set tis opacity to 0 and used the 'animation-delay' property to start the 'fishPackageAniamtion' aftwe a specified delay. 
+
 
 3. accessibility and responsiveness:
 Additionally we incorporated Intersection Observer API' to make our webpage more interactive.This tool helps us show or hide content based on how a user scrolls
@@ -15,4 +22,7 @@ our webpage to guide users through our narrative. For instance, in specific sect
 
 We also took into considerations about WCAG and tried to make animations in slower pace. This can help people with motion sickness for instance to feel comfortbale while scrolly at the webpage. 
 
-// i also encourted some issues with boat dissapearing on a path in some parts, so what i did was to change value in viwbox on svg from original 979 to 1200
+// I encountered an issue where the boat would disappear at some certain parts of its path. to adress this, i adjusted the viewbox attribute in the SVG from its orginal value of 979 to 1200. 
+
+
+//write about gsap for making text box to pop up//

@@ -60,11 +60,15 @@ html,body{
   }
 
   /*første scene til marius*/
+  .main-section{
+    height: 100vw;
+    border: 2px solid black;
+  }
  .section3{ /*problems with this scene*/
     position: relative;
-    height: 100vw;
     max-width: 100%;
     overflow-x: hidden;
+    border: 2px solid red;
  }
  .boat {
     width: 32vw;
@@ -326,22 +330,24 @@ html,body{
         left:30%;
     }
     100% {
-        top: 63vw; /* Final position */
+        top: 55vw; /* Final position */
         opacity: 1;
-        left:6%;
+        left:15%;
     }
 }
 .fish-rullebånd{
    max-width:27%;
    top:43.5vw;
    right: 12%;
-   animation: fishAnimation 10s linear infinite;
+   animation: fishAnimation 10s linear forwards;
 }
 .fish-package{
     max-width:4%;
     top: 50vw;
     left: 21%;
-    animation: fishPackageAnimation 6s linear infinite;
+    opacity: 0;
+    animation: fishPackageAnimation 10s forwards;
+    animation-delay: 4.3s;
 }
 
 .rullebånd-maskin{
