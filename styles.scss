@@ -1,6 +1,3 @@
-Here's the resolved CSS with conflicts resolved, and comments retained:
-
-```css
 html,
 body {
   margin: 0;
@@ -148,58 +145,56 @@ section {
 
 .sky {
   width: 105%;
-}
+  &-one {
+    z-index: 4;
+  }
 
-.sky-one {
-  z-index: 4;
-}
+  &-two {
+    z-index: 3;
+    top: 41vw;
+  }
 
-.sky-two {
-  z-index: 3;
-  top: 41vw;
-}
+  &-three {
+    z-index: 2;
+    top: 46vw;
+  }
 
-.sky-three {
-  z-index: 2;
-  top: 46vw;
-}
-
-.sky-four {
-  z-index: 1;
-  top: 50vw;
+  &-four {
+    z-index: 1;
+    top: 50vw;
+  }
 }
 
 .water {
   width: 105%;
-}
+  &__wrapper {
+    overflow-x: hidden;
+  }
 
-.water__wrapper {
-  overflow-x: hidden;
-}
+  &-four {
+    z-index: 5;
+    top: 61vw;
+  }
 
-.water-four {
-  z-index: 5;
-  top: 61vw;
-}
+  &-three {
+    top: 68vw;
+    z-index: 6;
+  }
 
-.water-three {
-  top: 68vw;
-  z-index: 6;
-}
+  &-two {
+    z-index: 8;
+    top: 75vw;
+  }
 
-.water-two {
-  z-index: 8;
-  top: 75vw;
-}
-
-.water-one {
-  z-index: 9;
-  top: 82.8vw;
+  &-one {
+    z-index: 9;
+    top: 82.8vw;
+  }
 }
 
 /* Scene 2 */
 .section-two {
-  background: linear-gradient(to bottom, #6161D1 6%, grey 23%, grey 0%);
+  background: linear-gradient(to bottom, #6161d1 6%, grey 23%, grey 0%);
   height: 100vw;
   top: 0vw;
   z-index: 1;
@@ -207,9 +202,9 @@ section {
 
 .fish-box__image {
   position: absolute;
-  width: 50vw;
+  width: 37vw;
   top: 37vw;
-  left: 22vw;
+  right: 5vw;
 }
 
 /* End of Scene 2 */
@@ -239,6 +234,8 @@ section {
   left: 26vw;
   top: 50.5vw;
   z-index: 3;
+}
+.animation-left{
   animation: slideLeft 3s infinite ease;
 }
 
@@ -246,12 +243,13 @@ section {
   right: 33vw;
   top: 50.5vw;
   z-index: 3;
+}
+.animation-right{
   animation: slideRight 3s infinite ease;
 }
 
-.container__box--
 
-green {
+.container__box--green {
   position: absolute;
   width: 38vw;
   left: 56vw;
@@ -299,46 +297,46 @@ green {
   width: 10vw;
   z-index: 2;
   position: absolute;
-}
-
-.waterflow-top--left {
-  top: 17vw;
-  left: 27vw;
-}
-
-.waterflow-top--middle {
-  top: 11vw;
-  left: 41vw;
-}
-
-.waterflow-right--middle {
-  top: 4vw;
-  left: 73vw;
-}
-
-.waterflow-top--right {
-  top: 11vw;
-  left: 76vw;
-}
-
-.waterflow-right {
-  top: 24vw;
-  left: 75vw;
-}
-
-.waterflow-bottom--right {
-  top: 33vw;
-  left: 65vw;
-}
-
-.waterflow-bottom--middle {
-  top: 38vw;
-  left: 53vw;
-}
-
-.waterflow-bottom--left {
-  top: 4vw;
-  left: 54vw;
+  &-top--left {
+    top: 17vw;
+    left: 27vw;
+  }
+  
+  &-top--middle {
+    top: 11vw;
+    left: 41vw;
+  }
+  
+  &-right--middle {
+    top: 4vw;
+    left: 73vw;
+  }
+  
+  &-top--right {
+    top: 11vw;
+    left: 76vw;
+  }
+  
+  &-right {
+    top: 24vw;
+    left: 75vw;
+  }
+  
+  &-bottom--right {
+    top: 33vw;
+    left: 65vw;
+  }
+  
+  &-bottom--middle {
+    top: 38vw;
+    left: 53vw;
+  }
+  
+  &-bottom--left {
+    top: 4vw;
+    left: 54vw;
+  }
+  
 }
 
 .squiggle {
@@ -353,6 +351,10 @@ green {
   top: -1vw;
 }
 
+.world-map, .world-map--second{
+  top: 5%;
+}
+
 .world-map,
 .world-map--second,
 .circle,
@@ -363,16 +365,12 @@ green {
 }
 
 .circle1,
-.circle3,
-.fish-package-conveyor {
-  position: absolute;
+.circle3{
   width: 2%;
   top: 12vw;
   left: 12%;
 }
 
-.circle2,
-.circle4,
 .circle2,
 .circle4 {
   z-index: 1;
@@ -418,12 +416,12 @@ green {
 }
 
 .fish-package {
-  animation: fishPackageAnimation 10s forwards;
+  animation: fishPackageAnimation 10s infinite;
   animation-delay: 4s infinite;
 }
 
 .fish-package2 {
-  animation: fishPackageAnimation2 10s forwards;
+  animation: fishPackageAnimation2 10s infinite;
   animation-delay: 8s infinite;
 }
 
@@ -458,6 +456,8 @@ green {
 
 .wrapper__hand > img {
   position: absolute;
+  z-index: 1;
+  width: 15vw;
 }
 
 .hand {
@@ -494,9 +494,7 @@ green {
 .fish__store-pickUp {
   display: none;
   top: 20vw;
-  left: 
-
-6vw;
+  left: 6vw;
   z-index: 2;
 }
 

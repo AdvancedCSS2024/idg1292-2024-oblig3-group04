@@ -27,7 +27,6 @@ section {
     opacity: 1;
   }
 }
-
 @keyframes slideRight {
   0% {
     transform: translateX(22.8vw);
@@ -38,7 +37,6 @@ section {
     opacity: 1;
   }
 }
-
 @keyframes squiggle {
   0% {
     transform: translateY(0);
@@ -56,7 +54,6 @@ section {
     transform: translateY(0);
   }
 }
-
 @keyframes boatAnimation {
   0% {
     transform: translateX(0);
@@ -65,20 +62,18 @@ section {
     transform: translateX(64vw);
   }
 }
-
 @keyframes fishAnimation {
   0% {
-    top: 44vw;
-    right: 22vw;
+    top: 43vw;
+    right: 30vw;
     opacity: 1;
   }
   100% {
-    top: 40vw;
-    right: 40vh;
+    top: 41vw;
+    right: 50vh;
     opacity: 0;
   }
 }
-
 @keyframes fishPackageAnimation {
   0% {
     top: 40vw;
@@ -91,7 +86,6 @@ section {
     left: 15%;
   }
 }
-
 @keyframes fishPackageAnimation2 {
   0% {
     top: 40vw;
@@ -104,20 +98,17 @@ section {
     left: 21%;
   }
 }
-
 @keyframes armOne {
   100% {
     left: 18%;
     top: 46%;
   }
 }
-
 @keyframes armTwo {
   100% {
     transform: translateY(50%) translateX(50%);
   }
 }
-
 /* Scene 1 */
 .main__section {
   height: 98.5vw;
@@ -146,21 +137,17 @@ section {
 .sky {
   width: 105%;
 }
-
 .sky-one {
   z-index: 4;
 }
-
 .sky-two {
   z-index: 3;
   top: 41vw;
 }
-
 .sky-three {
   z-index: 2;
   top: 46vw;
 }
-
 .sky-four {
   z-index: 1;
   top: 50vw;
@@ -169,26 +156,21 @@ section {
 .water {
   width: 105%;
 }
-
 .water__wrapper {
   overflow-x: hidden;
 }
-
 .water-four {
   z-index: 5;
   top: 61vw;
 }
-
 .water-three {
   top: 68vw;
   z-index: 6;
 }
-
 .water-two {
   z-index: 8;
   top: 75vw;
 }
-
 .water-one {
   z-index: 9;
   top: 82.8vw;
@@ -196,7 +178,7 @@ section {
 
 /* Scene 2 */
 .section-two {
-  background: linear-gradient(to bottom, #6161D1 6%, grey 23%, grey 0%);
+  background: linear-gradient(to bottom, #6161d1 6%, grey 23%, grey 0%);
   height: 100vw;
   top: 0vw;
   z-index: 1;
@@ -204,13 +186,12 @@ section {
 
 .fish-box__image {
   position: absolute;
-  width: 50vw;
+  width: 37vw;
   top: 37vw;
-  left: 22vw;
+  right: 5vw;
 }
 
 /* End of Scene 2 */
-
 /* Scene 3 */
 .section-three {
   height: 115vw;
@@ -236,6 +217,9 @@ section {
   left: 26vw;
   top: 50.5vw;
   z-index: 3;
+}
+
+.animation-left {
   animation: slideLeft 3s infinite ease;
 }
 
@@ -243,6 +227,9 @@ section {
   right: 33vw;
   top: 50.5vw;
   z-index: 3;
+}
+
+.animation-right {
   animation: slideRight 3s infinite ease;
 }
 
@@ -263,7 +250,6 @@ section {
 }
 
 /* End of Scene 3 */
-
 /* Scene 4 */
 .section-four {
   height: 105vw;
@@ -295,42 +281,34 @@ section {
   z-index: 2;
   position: absolute;
 }
-
 .waterflow-top--left {
   top: 17vw;
   left: 27vw;
 }
-
 .waterflow-top--middle {
   top: 11vw;
   left: 41vw;
 }
-
 .waterflow-right--middle {
   top: 4vw;
   left: 73vw;
 }
-
 .waterflow-top--right {
   top: 11vw;
   left: 76vw;
 }
-
 .waterflow-right {
   top: 24vw;
   left: 75vw;
 }
-
 .waterflow-bottom--right {
   top: 33vw;
   left: 65vw;
 }
-
 .waterflow-bottom--middle {
   top: 38vw;
   left: 53vw;
 }
-
 .waterflow-bottom--left {
   top: 4vw;
   left: 54vw;
@@ -348,6 +326,10 @@ section {
   top: -1vw;
 }
 
+.world-map, .world-map--second {
+  top: 5%;
+}
+
 .world-map,
 .world-map--second,
 .circle,
@@ -358,16 +340,12 @@ section {
 }
 
 .circle1,
-.circle3,
-.fish-package-conveyor {
-  position: absolute;
+.circle3 {
   width: 2%;
   top: 12vw;
   left: 12%;
 }
 
-.circle2,
-.circle4,
 .circle2,
 .circle4 {
   z-index: 1;
@@ -384,7 +362,6 @@ section {
 }
 
 /* End of Scene 5 - Worldmap */
-
 /* Scene 6 */
 .section-six {
   background-color: #1c5b6a;
@@ -395,8 +372,9 @@ section {
 .conveyor-fish-two {
   position: absolute;
   max-width: 14%;
-  right: 12%;
-  animation: fishAnimation 10s linear forwards;
+  right: 17%;
+  top: 45vw;
+  animation: fishAnimation 6s linear infinite;
 }
 
 .fish-package-conveyor {
@@ -412,13 +390,13 @@ section {
 }
 
 .fish-package {
-  animation: fishPackageAnimation 10s forwards;
-  animation-delay: 10s;
+  animation: fishPackageAnimation 10s infinite;
+  animation-delay: 4s infinite;
 }
 
 .fish-package2 {
-  animation: fishPackageAnimation2 10s forwards;
-  animation-delay: 5.2s;
+  animation: fishPackageAnimation2 10s infinite;
+  animation-delay: 8s infinite;
 }
 
 .conveyor-belt {
@@ -430,7 +408,6 @@ section {
 }
 
 /* End of Scene in Factory */
-
 /* Scene 7 - Map Again */
 .section-seven {
   background: linear-gradient(to bottom, #1c5b6a 5%, #009dc4 30%, #009dc4 0%);
@@ -452,6 +429,8 @@ section {
 
 .wrapper__hand > img {
   position: absolute;
+  z-index: 1;
+  width: 15vw;
 }
 
 .hand {
@@ -520,4 +499,4 @@ section {
   .animation-left {
     animation: slideLeft 8s infinite ease;
   }
-}
+}/*# sourceMappingURL=styles.css.map */
