@@ -1,25 +1,29 @@
+
+
 const sectionEls = document.querySelectorAll(".animate");
 
 const options = {
   rootMargin: "10%",
   threshold: 0.5,
 };
-
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 console.log("prefersReducedMotion:", prefersReducedMotion); // Add this console log
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
+const observer = new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
     const isLeftDoor = entry.target.classList.contains("door--left");
     const isRightDoor = entry.target.classList.contains("door--right");
     const isWaterflow = entry.target.classList.contains("waterflow")
     const isBoat = entry.target.classList.contains("boat")
-		
+    const isFish = entry.target.classList.contains("conveyor-fish-two")
+    const isPackFish = entry.target.classList.contains("fish-package")
+    const isPackFish2 = entry.target.classList.contains("fish-package2")
+
     if(entry.isIntersecting && isLeftDoor){
-			entry.target.classList.add("animation-left");
-		}else{
-			entry.target.classList.remove("animation-left");
-		
+            entry.target.classList.add("animation-left");
+        }else{
+            entry.target.classList.remove("animation-left");
+
     }if(entry.isIntersecting && isRightDoor)
     entry.target.classList.add("animation-right");
     else{
@@ -29,14 +33,29 @@ const observer = new IntersectionObserver(entries => {
     entry.target.classList.add("squiggle");
     else{
       entry.target.classList.remove("squiggle")
+
+    }if(entry.isIntersecting && isFish)
+    entry.target.classList.add("conveyor-fish-two-animate");
+    else{
+      entry.target.classList.remove("conveyor-fish-two-animate")
+
+    }if(entry.isIntersecting && isPackFish)
+    entry.target.classList.add("fish-package-animation");
+    else{
+      entry.target.classList.remove("fish-package-animation")
+
+    }if(entry.isIntersecting && isPackFish2)
+    entry.target.classList.add("fish-package2-animation");
+    else{
+      entry.target.classList.remove("fish-package2-animation")
     }
+
     if (entry.isIntersecting && isBoat){
       gsap.from(".boat", {duration:3, rotate:'-5%', repeat:-1});
       gsap.to(".boat", {duration:3, y:'10%', rotate:'5%', repeat:-1, yoyo:true});
     }
   }, options);
 });
-
 sectionEls.forEach((el) => observer.observe(el));
 
 const backPath = document.querySelector('.back-path');
@@ -46,16 +65,17 @@ const totalLength = backPath.getTotalLength();
 
 const position = { x: 0, y: 0 };
 
-const animationDuration = prefersReducedMotion ? 60 : 10; // Adjust duration based on prefers-reduced-motion
+const animationDuration = prefersReducedMotion ? 200 : 10; // Adjust duration based on prefers-reduced-motion
 const animationTween = gsap.to(position, {
   x: totalLength,
-  duration: animationDuration,
+  duration: 20,
+  repeat: 1,
   onUpdate: () => {
     const point = backPath.getPointAtLength(position.x);
     boatBack.setAttribute('x', point.x - 25);
     boatBack.setAttribute('y', point.y - 25);
   },
-  repeat: -1,
+  paused: true
 });
 
 const observer2 = new IntersectionObserver(entries => {
@@ -77,16 +97,18 @@ const totalLength2 = path2.getTotalLength();
 
 const position2 = { x: totalLength2, y: 0 };
 
-const boatAnimationDuration2 = prefersReducedMotion ? 60 : 20; // Adjust duration based on prefers-reduced-motion
+
+const boatAnimationDuration2 = prefersReducedMotion ? 100 : 20; // Adjust duration based on prefers-reduced-motion
 const boatAnimationTween2 = gsap.to(position2, {
   x: 0,
-  duration: boatAnimationDuration2,
+  duration: 20,
   onUpdate: () => {
     const point2 = path2.getPointAtLength(position2.x);
     boat2.setAttribute('x', point2.x - 25);
     boat2.setAttribute('y', point2.y - 25);
   },
-  repeat: -1,
+  repeat: 1,
+  paused: true
 });
 
 const observer3 = new IntersectionObserver(entries => {
@@ -101,7 +123,9 @@ const observer3 = new IntersectionObserver(entries => {
 
 observer3.observe(path2);
 
-// GSAP for scene 1
+
+
+// Gsap for scene 1
 const gsapDuration = prefersReducedMotion ? 8 : 16; // Adjust duration based on prefers-reduced-motion
 
 if (!prefersReducedMotion) { // Check if prefers-reduced-motion is not set to reduce
@@ -112,5 +136,4 @@ if (!prefersReducedMotion) { // Check if prefers-reduced-motion is not set to re
 } else {
   gsap.to([".sky-one", ".sky-three", ".sky-two", ".sky-four", ".water-one", ".water-three", ".water-two", ".water-four"], { duration: gsapDuration, x: '-4.8vw', repeat: -1, yoyo: true });
 }
-
 
