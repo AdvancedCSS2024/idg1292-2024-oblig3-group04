@@ -80,7 +80,7 @@ const totalLength = backPath.getTotalLength();
 
 const position = { x: 0, y: 0 };
 
-const animationDuration = prefersReducedMotion ? 110 : 10; // Adjust duration based on prefers-reduced-motion
+const animationDuration = prefersReducedMotion ? 110 : 30; // Adjust duration based on prefers-reduced-motion
 const animationTween = gsap.to(position, {
   x: totalLength,
   duration: animationDuration,
@@ -113,7 +113,7 @@ const totalLength2 = path2.getTotalLength();
 const position2 = { x: totalLength2, y: 0 };
 
 
-const boatAnimationDuration2 = prefersReducedMotion ? 100 : 20; // Adjust duration based on prefers-reduced-motion
+const boatAnimationDuration2 = prefersReducedMotion ? 100 : 30; // Adjust duration based on prefers-reduced-motion
 const boatAnimationTween2 = gsap.to(position2, {
   x: 0,
   duration: boatAnimationDuration2,
