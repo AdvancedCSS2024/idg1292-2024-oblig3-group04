@@ -272,7 +272,7 @@ html,body{
 .world,
 .world2,
 .fish-rullebånd,
-.fish-package{
+.fish-conveyor{
     position: absolute;
 }
 
@@ -336,19 +336,40 @@ html,body{
         left:15%;
     }
 }
+
+@keyframes fishPackageAnimation2 {
+  0% {
+      top: 40vw; /* Starting position */
+      opacity: 0;
+      left:30%;
+  }
+  100% {
+      top: 49vw; /* Final position */
+      opacity: 1;
+      left:21%;
+  }
+}
 .fish-rullebånd{
    max-width:27%;
    top:43.5vw;
    right: 12%;
    animation: fishAnimation 10s linear forwards;
 }
+
+.fish-conveyor{
+  max-width:4%;
+  top: 50vw;
+  left: 21%;
+  opacity: 0;
+}
 .fish-package{
-    max-width:4%;
-    top: 50vw;
-    left: 21%;
-    opacity: 0;
     animation: fishPackageAnimation 10s forwards;
     animation-delay: 4.3s;
+}
+
+.fish-package2{
+  animation: fishPackageAnimation2 10s forwards;
+  animation-delay: 5.2s;
 }
 
 .rullebånd-maskin{
@@ -407,9 +428,20 @@ top: -1vw;
 }
 
 .store-top{
-    top: 7vw;
+    top: 6vw;
+}
+
+.fishpackage > img{
+  position: absolute;
+  z-index: 1;
 }
 .fish-store{
   top: 20vw;
   left: 14vw;
+  width: 17vw;
+}
+.fish-pickingUp{
+top: 22.6vw;
+left: 25vw;
+width: 11vw;
 }
