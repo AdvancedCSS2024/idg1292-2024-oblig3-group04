@@ -89,6 +89,17 @@ section {
     left: 21%;
   }
 }
+@keyframes armOne {
+  100% {
+    left: 18%;
+    top: 46%;
+  }
+}
+@keyframes armTwo {
+  100% {
+    transform: translateY(50%) translateX(50%);
+  }
+}
 /*1 scene*/
 .main__section {
   height: 98.5vw;
@@ -359,6 +370,11 @@ section {
   opacity: 0;
 }
 
+.fishpackage > img {
+  position: absolute;
+  z-index: 1;
+}
+
 .fish-package {
   animation: fishPackageAnimation 10s forwards;
   animation-delay: 10s;
@@ -395,36 +411,39 @@ section {
 .section-nine {
   top: -2vw;
   max-width: 100%;
+  overflow-y: hidden;
 }
 
 .wrapper__hand > img {
   position: absolute;
-  z-index: 1;
-  width: 15vw;
 }
 
 .hand {
-  top: 20vw;
-  left: 43vw;
+  display: none;
+  top: 35vw;
+  left: 25vw;
+  width: 17vw;
+  z-index: 5;
+  animation: armOne 1s ease-in forwards;
 }
 
 .arm {
-  top: 30vw;
-  left: 78vw;
+  display: none;
+  top: 20vw;
+  left: 8vw;
+  width: 35vw;
+  animation: armTwo 1s ease-in 2s forwards;
 }
 
-.finger-top {
-  top: 10vw;
-  left: 70vw;
+.unhide {
+  display: block;
 }
 
 .store-top {
-  top: 6vw;
-}
-
-.fishpackage > img {
-  position: absolute;
-  z-index: 1;
+  top: 13.5vw;
+  left: 5vw;
+  width: 37vw !important;
+  z-index: 3;
 }
 
 .fish-store {
@@ -433,8 +452,21 @@ section {
   width: 17vw;
 }
 
-.fish-pickingUp {
-  top: 22.6vw;
-  left: 25vw;
-  width: 11vw;
+.fish__store {
+  width: 30vw !important;
+}
+.fish__store-pickUp {
+  display: none;
+  top: 20vw;
+  left: 6vw;
+  z-index: 2;
+}
+.fish__store-other {
+  left: 34vw;
+}
+.fish__store-other--1 {
+  top: 20vw;
+}
+.fish__store-other--2 {
+  top: 18vw;
 }/*# sourceMappingURL=styles.css.map */
