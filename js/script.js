@@ -6,20 +6,20 @@ const options = {
 
 const observer = new IntersectionObserver(entries=>{
 	entries.forEach(entry=>{
-    const isLeftDoor = entry.target.classList.contains("left-door");
-    const isRightDoor = entry.target.classList.contains("right-door");
+    const isLeftDoor = entry.target.classList.contains("door--left"); 
+    const isRightDoor = entry.target.classList.contains("door--right"); 
     const isWaterflow = entry.target.classList.contains("waterflow")
     const isBoat = entry.target.classList.contains("boat")
 		
     if(entry.isIntersecting && isLeftDoor){
-			entry.target.classList.add("animation-left");
+			entry.target.classList.add("animation--left"); 
 		}else{
-			entry.target.classList.remove("animation-left");
+			entry.target.classList.remove("animation--left"); 
 		
     }if(entry.isIntersecting && isRightDoor)
-    entry.target.classList.add("animation-right");
+    entry.target.classList.add("animation--right"); 
     else{
-      entry.target.classList.remove("animation-right")
+      entry.target.classList.remove("animation--right") 
     
     }if(entry.isIntersecting && isWaterflow)
     entry.target.classList.add("squiggle")

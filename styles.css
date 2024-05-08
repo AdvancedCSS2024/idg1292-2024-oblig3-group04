@@ -1,15 +1,13 @@
-@charset "UTF-8";
 html, body {
   margin: 0;
   height: 100%;
-  background-color: #009dc4;
-  overflow-x: hidden;
 }
 
 section {
   position: relative;
 }
 
+/*all animations */
 @keyframes slideLeft {
   0% {
     transform: translateX(10vw);
@@ -57,17 +55,13 @@ section {
 }
 @keyframes fishAnimation {
   0% {
-    right: 12%;
+    top: 44vw;
+    right: 22vw;
     opacity: 1;
-  }
-  50% {
-    top: 40vw;
-    right: 40%;
-    opacity: 0;
   }
   100% {
     top: 40vw;
-    right: 40%;
+    right: 40vh;
     opacity: 0;
   }
 }
@@ -95,76 +89,77 @@ section {
     left: 21%;
   }
 }
-/*første scene til marius*/
+/*1 scene*/
 .main__section {
   height: 98.5vw;
 }
 
-.section-one { /*problems with this scene*/
+.section-one {
   max-width: 100%;
   height: 98.5vw;
   overflow-x: hidden;
-}
-
-.boat {
-  width: 32vw;
 }
 
 .sky,
 .water,
 .boat {
   position: absolute;
+  overflow-x: hidden;
 }
 
 .boat {
   z-index: 7;
-  top: 95vw;
+  top: 60vw;
   left: 30vw;
+  width: 32vw;
 }
 
 .sky {
-  width: 120%;
+  width: 105%;
 }
 .sky-one {
   z-index: 4;
 }
 .sky-two {
   z-index: 3;
-  top: 80vw;
+  top: 41vw;
 }
 .sky-three {
   z-index: 2;
-  top: 85vw;
+  top: 46vw;
 }
 .sky-four {
   z-index: 1;
-  top: 90vw;
+  top: 50vw;
 }
 
 .water {
-  width: 120%;
+  width: 105%;
 }
-.water-one {
-  z-index: 9;
-  top: 119vw;
-}
-.water-two {
-  z-index: 8;
-  top: 110vw;
-}
-.water-three {
-  top: 104vw;
-  z-index: 6;
+.water__wrapper {
+  overflow-x: hidden;
 }
 .water-four {
   z-index: 5;
-  top: 99vw;
+  top: 61vw;
+}
+.water-three {
+  top: 68vw;
+  z-index: 6;
+}
+.water-two {
+  z-index: 8;
+  top: 75vw;
+}
+.water-one {
+  z-index: 9;
+  top: 82.8vw;
 }
 
 /*scene 2*/
 .section-two {
   background: linear-gradient(to bottom, #6161D1 6%, grey 23%, grey 0%);
-  height: 90vw;
+  height: 100vw;
   top: 0vw;
   z-index: 1;
 }
@@ -177,11 +172,7 @@ section {
 }
 
 /* end of scene 2*/
-.fill {
-  height: 400px;
-}
-
-/* scene 3 - jakub*/
+/* scene 3 */
 .section-three {
   height: 115vw;
   top: -1vw;
@@ -192,35 +183,48 @@ section {
 .open-box {
   position: absolute;
   width: 50vw;
-  top: 20vw;
-  left: 20vw;
+  top: 28vw;
+  left: 27vw;
+  z-index: 2;
 }
 
-.left-door {
+.door {
   position: absolute;
   width: 14vw;
-  left: 20vw;
-  top: 42.3vw;
 }
-
-.right-door {
-  position: absolute;
-  width: 14vw;
-  right: 38.5vw;
-  top: 42.3vw;
-}
-
-.animation-left {
+.door--left {
+  left: 26vw;
+  top: 50.5vw;
+  z-index: 3;
   animation: slideLeft 3s infinite ease;
 }
-
-.animation-right {
+.door--right {
+  right: 33vw;
+  top: 50.5vw;
+  z-index: 3;
   animation: slideRight 3s infinite ease;
 }
 
+.container__box--green {
+  position: absolute;
+  width: 38vw;
+  left: 56vw;
+  top: 22vw;
+  z-index: 1;
+}
+
+.container__box--yellow {
+  width: 45vw;
+  z-index: 3;
+  left: 8vw;
+  top: 52vw;
+  position: absolute;
+}
+
 /* end of section 3*/
+/*scene 4 */
 .section-four {
-  height: 100vw;
+  height: 105vw;
   top: -1vw;
   background: linear-gradient(to bottom, #c8bcc7 1%, #009dc4 18%, #009dc4 0%);
 }
@@ -249,19 +253,23 @@ section {
   z-index: 2;
   position: absolute;
 }
-.waterflow-topleft {
+.waterflow-top--left {
   top: 17vw;
   left: 27vw;
 }
-.waterflow-topmiddle {
+.waterflow-top--left {
+  top: 17vw;
+  left: 27vw;
+}
+.waterflow-top--middle {
   top: 11vw;
   left: 41vw;
 }
-.waterflow-rightmiddle {
+.waterflow-right--middle {
   top: 4vw;
   left: 73vw;
 }
-.waterflow-topright {
+.waterflow-top--right {
   top: 11vw;
   left: 76vw;
 }
@@ -269,15 +277,15 @@ section {
   top: 24vw;
   left: 75vw;
 }
-.waterflow-bottomright {
+.waterflow-bottom--right {
   top: 33vw;
   left: 65vw;
 }
-.waterflow-bottommiddle {
+.waterflow-bottom--middle {
   top: 37vw;
   left: 53vw;
 }
-.waterflow-bottomleft {
+.waterflow-bottom--left {
   top: 2vw;
   left: 54vw;
 }
@@ -286,7 +294,7 @@ section {
   animation: squiggle 2s infinite ease;
 }
 
-/*section 5 - wolrdmap*/
+/*section 5 */
 .section-five {
   background: linear-gradient(to bottom, #009dc4 0%, #009dc4 70%, #1c5b6a 100%);
   height: 100vw;
@@ -294,8 +302,7 @@ section {
   top: -1vw;
 }
 
-.world-map,
-.world-map--second {
+.world-map .world-map--second {
   top: 5%;
 }
 
@@ -311,7 +318,7 @@ section {
 .circle1,
 .circle3 {
   width: 2%;
-  top: 17vw;
+  top: 12vw;
   left: 12%;
 }
 
@@ -319,28 +326,28 @@ section {
 .circle4 {
   z-index: 1;
   width: 3%;
-  top: 39vw;
+  top: 34vw;
   right: 22%;
 }
 
 .path {
   max-width: 100vw;
-  top: 18vw;
+  top: 13vw;
   left: 2%;
   z-index: 2;
 }
 
 /* end of section5 - wolrdmap */
-/*scene 6 factory */
+/*scene 6*/
 .section-six {
   background-color: #1c5b6a;
   height: 100vw;
   top: -1vw;
 }
 
-.conveyor-fish {
-  max-width: 27%;
-  top: 43.5vw;
+.conveyor-fish-two {
+  position: absolute;
+  max-width: 14%;
   right: 12%;
   animation: fishAnimation 10s linear forwards;
 }
@@ -354,7 +361,7 @@ section {
 
 .fish-package {
   animation: fishPackageAnimation 10s forwards;
-  animation-delay: 4.3s;
+  animation-delay: 10s;
 }
 
 .fish-package2 {
@@ -379,13 +386,11 @@ section {
   top: -1vw;
 }
 
-/*end opf scene of map*/
 /*scene 8 - grocery shop*/
 .section-eight {
   top: -1vw;
 }
 
-/*end of scene of shop*/
 /*scene 9 - inside grocery shop*/
 .section-nine {
   top: -2vw;
