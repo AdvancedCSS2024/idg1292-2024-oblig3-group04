@@ -314,17 +314,13 @@ section{
 }
 @keyframes fishAnimation{
   0%{
-      right: 12%;
+      top: 44vw;
+      right: 20vw;
       opacity: 1;
-  }
-  50% {
-      top: 40vw;
-      right: 40%;
-      opacity: 0;
   }
   100% {
       top: 40vw;
-      right: 40%;
+      right: 28vh;
       opacity: 0;
   }
 }
@@ -353,12 +349,13 @@ section{
     left:21%;
 }
 }
-.conveyor-fish{
- max-width:27%;
- top:43.5vw;
- right: 12%;
- animation: fishAnimation 10s linear forwards;
-}
+ .conveyor-fish-two{
+  position: absolute;
+  max-width:16%;
+  right: 12%;
+  animation: fishAnimation 10s linear infinite;
+ }
+
 
 .fish-package-conveyor{
 max-width:4%;
