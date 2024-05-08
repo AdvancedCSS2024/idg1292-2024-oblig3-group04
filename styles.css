@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   height: 100%;
 }
@@ -117,17 +118,21 @@ section {
 .sky {
   width: 105%;
 }
+
 .sky-one {
   z-index: 4;
 }
+
 .sky-two {
   z-index: 3;
   top: 41vw;
 }
+
 .sky-three {
   z-index: 2;
   top: 46vw;
 }
+
 .sky-four {
   z-index: 1;
   top: 50vw;
@@ -136,21 +141,26 @@ section {
 .water {
   width: 105%;
 }
+
 .water__wrapper {
   overflow-x: hidden;
 }
+
 .water-four {
   z-index: 5;
   top: 61vw;
 }
+
 .water-three {
   top: 68vw;
   z-index: 6;
 }
+
 .water-two {
   z-index: 8;
   top: 75vw;
 }
+
 .water-one {
   z-index: 9;
   top: 82.8vw;
@@ -158,7 +168,7 @@ section {
 
 /*scene 2*/
 .section-two {
-  background: linear-gradient(to bottom, #6161D1 6%, grey 23%, grey 0%);
+  background: linear-gradient(to bottom, #6161d1 6%, grey 23%, grey 0%);
   height: 100vw;
   top: 0vw;
   z-index: 1;
@@ -192,16 +202,24 @@ section {
   position: absolute;
   width: 14vw;
 }
+
 .door--left {
   left: 26vw;
   top: 50.5vw;
   z-index: 3;
+}
+
+.animation-left {
   animation: slideLeft 3s infinite ease;
 }
+
 .door--right {
   right: 33vw;
   top: 50.5vw;
   z-index: 3;
+}
+
+.animation-right {
   animation: slideRight 3s infinite ease;
 }
 
@@ -253,38 +271,47 @@ section {
   z-index: 2;
   position: absolute;
 }
+
 .waterflow-top--left {
   top: 17vw;
   left: 27vw;
 }
+
 .waterflow-top--left {
   top: 17vw;
   left: 27vw;
 }
+
 .waterflow-top--middle {
   top: 11vw;
   left: 41vw;
 }
+
 .waterflow-right--middle {
   top: 4vw;
   left: 73vw;
 }
+
 .waterflow-top--right {
   top: 11vw;
   left: 76vw;
 }
+
 .waterflow-right {
   top: 24vw;
   left: 75vw;
 }
+
 .waterflow-bottom--right {
   top: 33vw;
   left: 65vw;
 }
+
 .waterflow-bottom--middle {
   top: 37vw;
   left: 53vw;
 }
+
 .waterflow-bottom--left {
   top: 2vw;
   left: 54vw;
