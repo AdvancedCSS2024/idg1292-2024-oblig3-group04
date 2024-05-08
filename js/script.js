@@ -5,34 +5,42 @@ const options = {
   threshold: 0.5,
 };
 
-const observer = new IntersectionObserver(entries=>{
-	entries.forEach(entry=>{
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+console.log("prefersReducedMotion:", prefersReducedMotion); // Add this console log
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
     const isLeftDoor = entry.target.classList.contains("door--left");
     const isRightDoor = entry.target.classList.contains("door--right");
-    const isWaterflow = entry.target.classList.contains("waterflow")
-    const isBoat = entry.target.classList.contains("boat")
-		
-    if(entry.isIntersecting && isLeftDoor){
-			entry.target.classList.add("animation-left");
-		}else{
-			entry.target.classList.remove("animation-left");
-		
-    }if(entry.isIntersecting && isRightDoor)
-    entry.target.classList.add("animation-right");
-    else{
-      entry.target.classList.remove("animation-right")
+    const isWaterflow = entry.target.classList.contains("waterflow");
+    const isBoat = entry.target.classList.contains("boat");
+
+    if (entry.isIntersecting && isLeftDoor) {
+      entry.target.classList.add("animation-left");
+    } else {
+      entry.target.classList.remove("animation-left");
     }
-    if(entry.isIntersecting && isWaterflow)
-    entry.target.classList.add("squiggle");
-    else{
-      entry.target.classList.remove("squiggle")
+
+    if (entry.isIntersecting && isRightDoor) {
+      entry.target.classList.add("animation-right");
+    } else {
+      entry.target.classList.remove("animation-right");
     }
-    if (entry.isIntersecting && isBoat){
-      gsap.from(".boat", {duration:3, rotate:'-5%', repeat:-1});
-      gsap.to(".boat", {duration:3, y:'10%', rotate:'5%', repeat:-1, yoyo:true});
+
+    if (entry.isIntersecting && isWaterflow) {
+      entry.target.classList.add("squiggle");
+    } else {
+      entry.target.classList.remove("squiggle");
     }
-  }, options);
-});
+
+    if (entry.isIntersecting && isBoat) {
+      if (!prefersReducedMotion) { // Check if prefers-reduced-motion is not set to reduce
+        gsap.from(".boat", { duration: 3, rotate: '-5%', repeat: -1 });
+        gsap.to(".boat", { duration: 3, y: '10%', rotate: '5%', repeat: -1, yoyo: true });
+      }
+    }
+  });
+}, options);
 
 sectionEls.forEach((el) => observer.observe(el));
 
@@ -43,16 +51,16 @@ const totalLength = backPath.getTotalLength();
 
 const position = { x: 0, y: 0 };
 
+const animationDuration = prefersReducedMotion ? 60 : 10; // Adjust duration based on prefers-reduced-motion
 const animationTween = gsap.to(position, {
   x: totalLength,
-  duration: 20,
-  repeat: -1,
+  duration: animationDuration,
   onUpdate: () => {
     const point = backPath.getPointAtLength(position.x);
     boatBack.setAttribute('x', point.x - 25);
     boatBack.setAttribute('y', point.y - 25);
   },
-  paused: true
+  repeat: -1,
 });
 
 const observer2 = new IntersectionObserver(entries => {
@@ -74,16 +82,16 @@ const totalLength2 = path2.getTotalLength();
 
 const position2 = { x: totalLength2, y: 0 };
 
+const boatAnimationDuration2 = prefersReducedMotion ? 60 : 20; // Adjust duration based on prefers-reduced-motion
 const boatAnimationTween2 = gsap.to(position2, {
   x: 0,
-  duration: 20,
+  duration: boatAnimationDuration2,
   onUpdate: () => {
     const point2 = path2.getPointAtLength(position2.x);
     boat2.setAttribute('x', point2.x - 25);
     boat2.setAttribute('y', point2.y - 25);
   },
   repeat: -1,
-  paused: true
 });
 
 const observer3 = new IntersectionObserver(entries => {
@@ -98,11 +106,16 @@ const observer3 = new IntersectionObserver(entries => {
 
 observer3.observe(path2);
 
+// GSAP for scene 1
+const gsapDuration = prefersReducedMotion ? 8 : 16; // Adjust duration based on prefers-reduced-motion
+
+if (!prefersReducedMotion) { // Check if prefers-reduced-motion is not set to reduce
+  gsap.to([".sky-one", ".sky-three"], {duration: 8, x: '-4vw', repeat:-1, yoyo:true});
+  gsap.to([".sky-two", ".sky-four"], {duration: 8, x: '-4vw', repeat:-1, yoyo:true, delay:2});
+  gsap.to([".water-two", ".water-four"], {duration: 2, x: '-4vw', repeat:-1, yoyo:true});
+  gsap.to([".water-one", ".water-three"], {duration: 2, x: '-4vw', repeat:-1, yoyo:true, delay:1});
+} else {
+  gsap.to([".sky-one", ".sky-three", ".sky-two", ".sky-four", ".water-one", ".water-three", ".water-two", ".water-four"], { duration: gsapDuration, x: '-4.8vw', repeat: -1, yoyo: true });
+}
 
 
-// Gsap for scene 1
-gsap.to([".sky-one", ".sky-three"], {duration: 8, x: '-4vw', repeat:-1, yoyo:true});
-gsap.to([".sky-two", ".sky-four"], {duration: 8, x: '-4vw', repeat:-1, yoyo:true, delay:2});
-
-gsap.to([".water-two", ".water-four"], {duration: 2, x: '-4vw', repeat:-1, yoyo:true});
-gsap.to([".water-one", ".water-three"], {duration: 2, x: '-4vw', repeat:-1, yoyo:true, delay:1});

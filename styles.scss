@@ -105,7 +105,7 @@ section {
   }
   .section-one{ 
     max-width: 100%;
-    height: 98.5vw;
+    height: 98.6vw;
     overflow-x: hidden;
   }
   .sky,
@@ -446,53 +446,14 @@ section {
 
 /* prefers reduced motion */
 @media (prefers-reduced-motion: reduce) {
-    @keyframes slideLeft {
-      0% {
-        transform: translateX(10vw);
-        opacity: 0;
+    .animation-right {
+        animation: slideRight 8s infinite ease;
       }
-      100% {
-        transform: translateX(22.8vw);
-        opacity: 1;
+      .squiggle {
+        animation: squiggle 5s infinite ease;
       }
-    }
-  
-    @keyframes slideRight {
-      0% {
-        transform: translateX(22.8vw);
-        opacity: 0;
+      .animation-left {
+        animation: slideLeft 8s infinite ease;
       }
-      100% {
-        transform: translateX(10vw);
-        opacity: 1;
-      }
-    }
-  
-    @keyframes squiggle {
-      0% {
-        transform: translateY(0);
-      }
-      25% {
-        transform: translateY(-2px) rotate(1deg);
-      }
-      50% {
-        transform: translateY(2px) rotate(-1deg);
-      }
-      75% {
-        transform: translateY(-1px) rotate(0.5deg);
-      }
-      100% {
-        transform: translateY(0);
-      }
-    }
-  
-    @keyframes boatAnimation {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(64vw);
-      }
-    }
-  }
+}
   
