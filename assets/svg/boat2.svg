@@ -1,99 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.6 65.5">
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 141.6 65.5">
   <defs>
     <style>
-      .cls-1 {
-        fill: #36c;
-      }
-
-      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11 {
-        stroke-width: 0px;
-      }
-
-      .cls-2 {
-        fill: #cfdd1d;
-      }
-
-      .cls-3 {
-        fill: #f21c2c;
-      }
-
-      .cls-4 {
-        fill: #283535;
-      }
-
-      .cls-5 {
-        fill: #c6c2c2;
-      }
-
-      .cls-6 {
-        fill: #443636;
-      }
-
-      .cls-7 {
-        fill: #513636;
-      }
-
-      .cls-8 {
-        fill: #bac1cc;
-      }
-
-      .cls-9 {
-        fill: #d1d5db;
-      }
-
-      .cls-10 {
-        fill: #393;
-      }
-
-      .cls-11 {
-        fill: #253f89;
-      }
+      .cls-1{fill:#36c}.cls-1,.cls-2,.cls-3,.cls-6{stroke-width:0}.cls-2{fill:#cfdd1d}.cls-3{fill:#f21c2c}.cls-6{fill:#443636}
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer 1">
     <g id="boat">
-      <path class="cls-4" d="M29.5,38.8l-3.9-3.9H0s0,10.8,0,10.8c1.1.9,2.4,2.1,3.6,3.7,1.3,1.6,2.2,3.1,2.8,4.4l119.5.3c1.3-2.5,2.6-4.4,3.8-5.9,3.4-4.2,6-5.2,8.8-9.2,1.5-2.3,2.5-4.4,3.1-6.1h-21.3s-2.1,1.3-2.1,1.3h-11s-4.5,4.6-4.5,4.6H29.4s.1,0,.1,0Z"/>
-      <path class="cls-11" d="M125.7,54l-.9,5.2c1.5,0,2.9,1.1,3.2,2.6.3,1.4-.3,2.9-1.6,3.7H4.7c0-.1-1.3-1.6-.8-3.3.4-1.4,1.9-2.4,3.5-2.4l-.7-5.7h119v-.1Z"/>
-      <rect class="cls-8" x="3.1" y="26.7" width="21" height="7.8"/>
-      <rect class="cls-6" x="2.9" y="25.5" width="21.6" height="1.1"/>
-      <polygon class="cls-9" points="22.8 25.5 22.8 11.2 24.1 11.2 24.1 7.7 9.8 7.7 9.8 25.5 22.8 25.5"/>
-      <rect class="cls-6" x="9.8" y="6.6" width="14.3" height="1.1"/>
-      <rect class="cls-6" x="6.9" y="0" width="7.6" height="1"/>
-      <polygon class="cls-5" points="14.3 1 14.3 6.6 9.8 6.6 9.8 25.5 7.1 25.5 7.1 1 14.3 1"/>
-      <rect class="cls-7" x="21.9" y="8.4" width="1.4" height="1.4"/>
-      <rect class="cls-7" x="14.5" y="8.4" width="1.4" height="1.4"/>
-      <rect class="cls-7" x="17" y="8.4" width="1.4" height="1.4"/>
-      <rect class="cls-7" x="19.5" y="8.4" width="1.4" height="1.4"/>
-      <rect class="cls-7" x="16.8" y="22.8" width="4.5" height="1.9"/>
-      <rect class="cls-7" x="16.8" y="19.7" width="4.5" height="1.9"/>
-      <rect class="cls-7" x="12.3" y="19.7" width="2.3" height="5"/>
-      <rect class="cls-7" x="6.1" y="29.6" width="2" height="2"/>
-      <rect class="cls-7" x="11" y="29.6" width="2" height="2"/>
-      <rect class="cls-7" x="15.6" y="29.6" width="1.9" height="1.9"/>
-      <rect class="cls-7" x="20" y="29.6" width="1.9" height="1.9"/>
-      <rect class="cls-3" x="79.6" y="20.5" width="12.5" height="6.2"/>
-      <rect class="cls-1" x="92" y="20.6" width="12.5" height="6.1"/>
-      <rect class="cls-1" x="54.7" y="20.6" width="12.5" height="6.1"/>
-      <rect class="cls-1" x="79.5" y="14.5" width="12.5" height="6.1"/>
-      <rect class="cls-1" x="29.8" y="26.7" width="12.5" height="6.1"/>
-      <rect class="cls-3" x="79.6" y="20.5" width="12.5" height="6.2"/>
-      <rect class="cls-3" x="54.7" y="26.6" width="12.5" height="6.2"/>
-      <polygon class="cls-10" points="104.5 32.8 104.5 37 102.7 38.8 92.1 38.8 92.1 32.8 104.5 32.8"/>
-      <polygon class="cls-10" points="79.6 26.7 79.6 32.8 67.2 32.8 67.2 26.6 79.6 26.7"/>
-      <polygon class="cls-10" points="54.7 32.7 54.7 38.7 42.4 38.8 42.4 32.6 54.7 32.7"/>
-      <polygon class="cls-10" points="67.2 14.5 67.1 20.6 54.8 20.6 54.8 14.4 67.2 14.5"/>
-      <polygon class="cls-10" points="54.7 20.6 54.7 26.6 42.4 26.7 42.4 20.5 54.7 20.6"/>
-      <rect class="cls-2" x="92.1" y="26.7" width="12.4" height="6.1"/>
-      <rect class="cls-2" x="92.1" y="26.7" width="12.4" height="6.1"/>
-      <rect class="cls-2" x="67.2" y="20.6" width="12.4" height="6.1"/>
-      <rect class="cls-2" x="42.3" y="26.5" width="12.4" height="6.1"/>
-      <rect class="cls-2" x="79.6" y="32.7" width="12.4" height="6.1"/>
-      <rect class="cls-1" x="67.1" y="32.8" width="12.5" height="6.1"/>
-      <rect class="cls-3" x="29.8" y="32.8" width="12.5" height="6.2"/>
-      <rect class="cls-3" x="67.1" y="14.4" width="12.5" height="6.2"/>
-      <rect class="cls-1" x="79.6" y="26.7" width="12.5" height="6.1"/>
-      <rect class="cls-2" x="54.8" y="32.8" width="12.4" height="6.1"/>
+      <path d="m29.5 38.8-3.9-3.9H0v10.8c1.1.9 2.4 2.1 3.6 3.7a21 21 0 0 1 2.8 4.4l119.5.3c1.3-2.5 2.6-4.4 3.8-5.9 3.4-4.2 6-5.2 8.8-9.2 1.5-2.3 2.5-4.4 3.1-6.1h-21.3l-2.1 1.3h-11l-4.5 4.6H29.4h.1Z" style="fill:#283535;stroke-width:0"/>
+      <path d="m125.7 54-.9 5.2c1.5 0 2.9 1.1 3.2 2.6.3 1.4-.3 2.9-1.6 3.7H4.7c0-.1-1.3-1.6-.8-3.3.4-1.4 1.9-2.4 3.5-2.4l-.7-5.7h119V54Z" style="fill:#253f89;stroke-width:0"/>
+      <path d="M3.1 26.7h21v7.8h-21z" style="fill:#bac1cc;stroke-width:0"/>
+      <path d="M2.9 25.5h21.6v1.1H2.9z" class="cls-6"/>
+      <path d="M22.8 25.5V11.2h1.3V7.7H9.8v17.8h13z" style="fill:#d1d5db;stroke-width:0"/>
+      <path d="M9.8 6.6h14.3v1.1H9.8zM6.9 0h7.6v1H6.9z" class="cls-6"/>
+      <path d="M14.3 1v5.6H9.8v18.9H7.1V1h7.2z" style="fill:#c6c2c2;stroke-width:0"/>
+      <path d="M21.9 8.4h1.4v1.4h-1.4zm-7.4 0h1.4v1.4h-1.4zm2.5 0h1.4v1.4H17zm2.5 0h1.4v1.4h-1.4zm-2.7 14.4h4.5v1.9h-4.5zm0-3.1h4.5v1.9h-4.5zm-4.5 0h2.3v5h-2.3zm-6.2 9.9h2v2h-2zm4.9 0h2v2h-2zm4.6 0h1.9v1.9h-1.9zm4.4 0h1.9v1.9H20z" style="fill:#513636;stroke-width:0"/>
+      <path d="M79.6 20.5h12.5v6.2H79.6z" class="cls-3"/>
+      <path d="M92 20.6h12.5v6.1H92zm-37.3 0h12.5v6.1H54.7zm24.8-6.1H92v6.1H79.5zM29.8 26.7h12.5v6.1H29.8z" class="cls-1"/>
+      <path d="M79.6 20.5h12.5v6.2H79.6zm-24.9 6.1h12.5v6.2H54.7z" class="cls-3"/>
+      <path d="M104.5 32.8V37l-1.8 1.8H92.1v-6h12.4zm-24.9-6.1v6.1H67.2v-6.2l12.4.1zm-24.9 6v6l-12.3.1v-6.2l12.3.1zm12.5-18.2-.1 6.1H54.8v-6.2l12.4.1zm-12.5 6.1v6l-12.3.1v-6.2l12.3.1z" style="fill:#393;stroke-width:0"/>
+      <path d="M92.1 26.7h12.4v6.1H92.1z" class="cls-2"/>
+      <path d="M92.1 26.7h12.4v6.1H92.1zm-24.9-6.1h12.4v6.1H67.2zm-24.9 5.9h12.4v6.1H42.3zm37.3 6.2H92v6.1H79.6z" class="cls-2"/>
+      <path d="M67.1 32.8h12.5v6.1H67.1z" class="cls-1"/>
+      <path d="M29.8 32.8h12.5V39H29.8zm37.3-18.4h12.5v6.2H67.1z" class="cls-3"/>
+      <path d="M79.6 26.7h12.5v6.1H79.6z" class="cls-1"/>
+      <path d="M54.8 32.8h12.4v6.1H54.8z" class="cls-2"/>
     </g>
   </g>
 </svg>
