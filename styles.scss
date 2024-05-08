@@ -463,7 +463,7 @@ section {
 
 .hand{
   display: none;
-  top: 35vw;
+  top: 40vw;
   left: 25vw;
   width: 17vw;
   z-index: 5;
@@ -474,7 +474,7 @@ section {
 
 .arm{
   display: none;
-  top: 20vw;
+  top: 22vw;
   left: 8vw;
   width: 35vw;
 }
@@ -484,27 +484,28 @@ section {
 }
 
 .store-top {
-  top: 13.5vw;
+  top: 16vw;
   left: 5vw;
   width: 37vw !important;
   z-index: 3;
 }
 
+
 .fish__store {
   width: 30vw !important;
   &-pickUp{
     display: none;
-    top: 20vw;
-    left: 6vw;
+    top: 24vw;
+    left: 8vw;
     z-index: 2;
   }
   &-other {
     left: 34vw;
     &--1 {
-      top: 20vw;
+      top: 22vw;
     }
     &--2{
-      top: 18vw;
+      top: 20vw;
     }
   }
 }
