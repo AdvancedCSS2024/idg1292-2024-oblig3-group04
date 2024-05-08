@@ -21,9 +21,10 @@ Animation for boat follwoing path on the map: * sources i used to make boat foll
 Additionally we incorporated Intersection Observer API' to make our webpage more interactive.This tool helps us show or hide content based on how a user scrolls
 our webpage to guide users through our narrative. For instance, in specific sections, we implemented scroll-based animations and transitions to enhance the storytelling experience. 
 
-We also took into considerations about WCAG and tried to make animations in slower pace. This can help people with motion sickness for instance to feel comfortbale while scrolly at the webpage. 
+We also took into considerations about WCAG and tried to make animations in slower pace. This can help people with motion sickness for instance to feel comfortbale while scrolly at the webpage. And we also used 'prefers-reduced-motion' 
 
-// I encountered an issue where the boat would disappear at some certain parts of its path. to adress this, i adjusted the viewbox attribute in the SVG from its orginal value of 979 to 1200. 
+// skrive mer om prefers-reduced-motion'
+
+I encountered an issue where the boat would disappear at some certain parts of its path. to adress this, i adjusted the viewbox attribute in the SVG from its orginal value of 979 to 1200. 
 
 
-//write about gsap for making text box to pop up//
