@@ -2,6 +2,7 @@ html,
 body {
   margin: 0;
   height: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 section {
@@ -16,7 +17,59 @@ section {
   margin: 1.5%;
 }
 
+.h2__box > h2 {
+  position: absolute;
+  z-index: 10;
+  font-size: 3vw;
+  color: rgb(37, 34, 34);
+  width: 78%;
+  left: 13.8vw;
+  top: 5vw;
+}
 
+.section__para {
+  position: relative;
+}
+
+.section-two__para {
+  width: 54%;
+}
+.section-two__para > p {
+  position: absolute;
+  word-break: normal;
+  z-index: 10;
+  font-size: 2.2vw;
+  color: rgb(37, 34, 34);
+  left: 10vw;
+  top: 50vw;
+}
+
+.section-six__para {
+  width: 78%;
+}
+
+.section-six__para > p {
+  position: absolute;
+  font-size: 2.2vw;
+  color: rgb(18, 15, 15);
+  right: -19vw;
+  top: 6vw;
+  width: 50%;
+}
+.section-eight__para > p {
+  position: absolute;
+  font-size: 2.5vw;
+  left: 10vw;
+}
+
+.section-nine__para > p {
+  position: absolute;
+  font-size: 1.9vw;
+  left: 70vw;
+  top: 9vw;
+  width: 25%;
+  color: rgb(18, 15, 15);
+}
 
 /* All animations */
 @keyframes slideLeft {
@@ -65,19 +118,6 @@ section {
   }
   100% {
     transform: translateX(64vw);
-  }
-}
-
-@keyframes fishAnimation {
-  0% {
-    top: 43vw;
-    right: 30vw;
-    opacity: 1;
-  }
-  100% {
-    top: 41vw;
-    right: 50vh;
-    opacity: 0;
   }
 }
 
@@ -197,8 +237,8 @@ section {
 /* Scene 2 */
 .section-two {
   background: linear-gradient(to bottom, #6161d1 6%, grey 23%, grey 0%);
-  height: 100vw;
-  top: 0vw;
+  height: 105vw;
+  top: -0.5vw;
   z-index: 1;
 }
 
@@ -237,7 +277,7 @@ section {
   top: 50.5vw;
   z-index: 3;
 }
-.animation-left{
+.animation-left {
   animation: slideLeft 3s infinite ease;
 }
 
@@ -246,10 +286,9 @@ section {
   top: 50.5vw;
   z-index: 3;
 }
-.animation-right{
+.animation-right {
   animation: slideRight 3s infinite ease;
 }
-
 
 .container__box--green {
   position: absolute;
@@ -303,42 +342,41 @@ section {
     top: 17vw;
     left: 27vw;
   }
-  
+
   &-top--middle {
     top: 11vw;
     left: 41vw;
   }
-  
+
   &-right--middle {
     top: 4vw;
     left: 73vw;
   }
-  
+
   &-top--right {
     top: 11vw;
     left: 76vw;
   }
-  
+
   &-right {
     top: 24vw;
     left: 75vw;
   }
-  
+
   &-bottom--right {
     top: 33vw;
     left: 65vw;
   }
-  
+
   &-bottom--middle {
     top: 38vw;
     left: 53vw;
   }
-  
+
   &-bottom--left {
     top: 4vw;
     left: 54vw;
   }
-  
 }
 
 .squiggle {
@@ -353,7 +391,8 @@ section {
   top: -1vw;
 }
 
-.world-map, .world-map--second{
+.world-map,
+.world-map--second {
   top: 5%;
 }
 
@@ -367,7 +406,7 @@ section {
 }
 
 .circle1,
-.circle3{
+.circle3 {
   width: 2%;
   top: 12vw;
   left: 12%;
@@ -402,7 +441,6 @@ section {
   max-width: 14%;
   right: 17%;
   top: 45vw;
-  animation: fishAnimation 6s linear infinite;
 }
 
 .fish-package-conveyor {
@@ -461,25 +499,25 @@ section {
   position: absolute;
 }
 
-.hand{
+.hand {
   display: none;
   top: 35vw;
   left: 25vw;
   width: 17vw;
   z-index: 5;
 }
-.hand-animation{
+.hand-animation {
   animation: armOne 1s ease-in forwards;
 }
 
-.arm{
+.arm {
   display: none;
   top: 20vw;
   left: 8vw;
   width: 35vw;
 }
 
-.arm-animation{
+.arm-animation {
   animation: armTwo 1s ease-in 2s forwards;
 }
 
@@ -492,7 +530,7 @@ section {
 
 .fish__store {
   width: 30vw !important;
-  &-pickUp{
+  &-pickUp {
     display: none;
     top: 20vw;
     left: 6vw;
@@ -503,7 +541,7 @@ section {
     &--1 {
       top: 20vw;
     }
-    &--2{
+    &--2 {
       top: 18vw;
     }
   }

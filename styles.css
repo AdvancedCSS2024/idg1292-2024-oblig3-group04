@@ -2,6 +2,7 @@ html,
 body {
   margin: 0;
   height: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 section {
@@ -14,6 +15,62 @@ section {
   opacity: 0.6;
   z-index: 11;
   margin: 1.5%;
+}
+
+.h2__box > h2 {
+  position: absolute;
+  z-index: 10;
+  font-size: 3vw;
+  color: rgb(37, 34, 34);
+  width: 78%;
+  left: 13.8vw;
+  top: 5vw;
+}
+
+.section__para {
+  position: relative;
+}
+
+.section-two__para {
+  width: 54%;
+}
+
+.section-two__para > p {
+  position: absolute;
+  word-break: normal;
+  z-index: 10;
+  font-size: 2.2vw;
+  color: rgb(37, 34, 34);
+  left: 10vw;
+  top: 50vw;
+}
+
+.section-six__para {
+  width: 78%;
+}
+
+.section-six__para > p {
+  position: absolute;
+  font-size: 2.2vw;
+  color: rgb(18, 15, 15);
+  right: -19vw;
+  top: 6vw;
+  width: 50%;
+}
+
+.section-eight__para > p {
+  position: absolute;
+  font-size: 2.5vw;
+  left: 10vw;
+}
+
+.section-nine__para > p {
+  position: absolute;
+  font-size: 1.9vw;
+  left: 70vw;
+  top: 9vw;
+  width: 25%;
+  color: rgb(18, 15, 15);
 }
 
 /* All animations */
@@ -60,18 +117,6 @@ section {
   }
   100% {
     transform: translateX(64vw);
-  }
-}
-@keyframes fishAnimation {
-  0% {
-    top: 43vw;
-    right: 30vw;
-    opacity: 1;
-  }
-  100% {
-    top: 41vw;
-    right: 50vh;
-    opacity: 0;
   }
 }
 @keyframes fishPackageAnimation {
@@ -179,8 +224,8 @@ section {
 /* Scene 2 */
 .section-two {
   background: linear-gradient(to bottom, #6161d1 6%, grey 23%, grey 0%);
-  height: 100vw;
-  top: 0vw;
+  height: 105vw;
+  top: -0.5vw;
   z-index: 1;
 }
 
@@ -326,7 +371,8 @@ section {
   top: -1vw;
 }
 
-.world-map, .world-map--second {
+.world-map,
+.world-map--second {
   top: 5%;
 }
 
@@ -374,7 +420,6 @@ section {
   max-width: 14%;
   right: 17%;
   top: 45vw;
-  animation: fishAnimation 6s linear infinite;
 }
 
 .fish-package-conveyor {
