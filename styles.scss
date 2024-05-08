@@ -452,15 +452,15 @@ section {
 .section-nine {
   top: -2vw;
   max-width: 100%;
+  overflow-y: hidden;
 }
 
 .wrapper__hand > img {
   position: absolute;
-  z-index: 1;
-  width: 15vw;
 }
 
-.hand {
+.hand{
+  display: none;
   top: 35vw;
   left: 25vw;
   width: 17vw;
@@ -468,17 +468,15 @@ section {
   animation: armOne 1s ease-in forwards;
 }
 
-.arm {
+.arm{
+  display: none;
   top: 20vw;
   left: 8vw;
   width: 35vw;
   animation: armTwo 1s ease-in 2s forwards;
 }
 
-/* Use this class to switch between what to show Hand and fish__store-pickUp or arm */
-.unhide {
-  display: block;
-}
+
 
 .store-top {
   top: 13.5vw;
@@ -487,34 +485,28 @@ section {
   z-index: 3;
 }
 
-.fish-store {
+.fish__store {
   width: 30vw !important;
+  &-pickUp{
+    display: none;
+    top: 20vw;
+    left: 6vw;
+    z-index: 2;
+  }
+  &-other {
+    left: 34vw;
+    &--1 {
+      top: 20vw;
+    }
+    &--2{
+      top: 18vw;
+    }
+  }
 }
-
-.fish__store-pickUp {
-  display: none;
-  top: 20vw;
-  left: 6vw;
-  z-index: 2;
+/* Use this class to switch between what to show Hand and fish__store-pickUp or arm */
+.unhide {
+  display: block;
 }
-
-.fish__store-other {
-  left: 34vw;
-}
-
-.fish__store-other--1 {
-  top: 20vw;
-}
-
-.fish__store-other--2 {
-  top: 18vw;
-}
-
-.fish-pickingUp {
-  top: 22.6vw;
-  left: 25vw;
-}
-
 /* Prefers Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
   .animation-right {
