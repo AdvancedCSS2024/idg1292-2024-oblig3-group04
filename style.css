@@ -121,7 +121,7 @@ section{
 /*scene 2*/
 .section-two{
     background: linear-gradient(to bottom, #6161D1 6%, grey 23%, grey 0%);
-    height: 90vw;
+    height: 100vw;
     top: 0vw;
     z-index: 1;
  }
@@ -142,22 +142,25 @@ section{
 .open-box {
   position: absolute;
   width: 50vw;
-  top: 20vw;
-  left: 20vw;
+  top: 28vw;
+  left: 27vw;
+  z-index: 2;
 }
 
 .left-door {
   position: absolute;
   width: 14vw;
-  left: 20vw;
-  top: 42.3vw;
+  left: 26vw;
+  top: 50.5vw;
+  z-index: 3;
 }
 
 .right-door {
   position: absolute;
   width: 14vw;
-  right: 38.5vw;
-  top: 42.3vw;
+  right: 33vw;
+  top: 50.5vw;
+  z-index: 3;
 }
 
 .animation-left {
@@ -167,11 +170,26 @@ section{
 .animation-right {
   animation: slideRight 3s infinite ease;
 }
+.container__box--green{
+  position: absolute;
+  width: 38vw;
+  left: 56vw;
+  top: 22vw;
+  z-index: 1;
+}
+.container__box--yellow{
+  width: 45vw;
+  z-index: 3;
+  left: 8vw;
+  top:52vw;
+  position: absolute;
+}
+
 /* end of section 3*/
 
 /*scene 4 - contianers in boat */
 .section-four{
-  height: 100vw;
+  height: 105vw;
   top: -1vw;
   background: linear-gradient(to bottom,#c8bcc7 1%,#009dc4 18%,#009dc4 0%);
 }
