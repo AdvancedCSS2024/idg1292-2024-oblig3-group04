@@ -89,6 +89,18 @@ section {
     left: 21%;
   }
 }
+.main, section {
+  position: relative;
+}
+
+.container__logo-SDG12 {
+  width: 14vw;
+  position: fixed;
+  z-index: 11;
+  margin: 1%;
+  opacity: 0.6;
+}
+
 /*1 scene*/
 .main__section {
   height: 98.5vw;
@@ -198,6 +210,8 @@ section {
   z-index: 3;
   animation: slideLeft 3s infinite ease;
 }
+
+
 .door--right {
   right: 33vw;
   top: 50.5vw;
