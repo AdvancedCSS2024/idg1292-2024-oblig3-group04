@@ -11,6 +11,9 @@ const observer = new IntersectionObserver(entries=>{
     const isRightDoor = entry.target.classList.contains("door--right");
     const isWaterflow = entry.target.classList.contains("waterflow")
     const isBoat = entry.target.classList.contains("boat")
+    const isFish = entry.target.classList.contains("conveyor-fish-two")
+    const isPackFish = entry.target.classList.contains("fish-package")
+    const isPackFish2 = entry.target.classList.contains("fish-package2")
 		
     if(entry.isIntersecting && isLeftDoor){
 			entry.target.classList.add("animation-left");
@@ -26,7 +29,23 @@ const observer = new IntersectionObserver(entries=>{
     entry.target.classList.add("squiggle");
     else{
       entry.target.classList.remove("squiggle")
+
+    }if(entry.isIntersecting && isFish)
+    entry.target.classList.add("conveyor-fish-two-animate");
+    else{
+      entry.target.classList.remove("conveyor-fish-two-animate")
+    
+    }if(entry.isIntersecting && isPackFish)
+    entry.target.classList.add("fish-package-animation");
+    else{
+      entry.target.classList.remove("fish-package-animation")
+    
+    }if(entry.isIntersecting && isPackFish2)
+    entry.target.classList.add("fish-package2-animation");
+    else{
+      entry.target.classList.remove("fish-package2-animation")
     }
+    
     if (entry.isIntersecting && isBoat){
       gsap.from(".boat", {duration:3, rotate:'-5%', repeat:-1});
       gsap.to(".boat", {duration:3, y:'10%', rotate:'5%', repeat:-1, yoyo:true});

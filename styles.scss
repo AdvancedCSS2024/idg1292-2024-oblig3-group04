@@ -354,7 +354,6 @@ section {
   position: absolute;
   max-width: 14%;
   right: 12%;
-  animation: fishAnimation 10s linear forwards;
 }
 
 .fish-package-conveyor {
@@ -364,14 +363,18 @@ section {
   opacity: 0;
 }
 
-.fish-package {
+.conveyor-fish-two-animate{
+  animation: fishAnimation 10s linear forwards;
+}
+
+.fish-package-animation {
   animation: fishPackageAnimation 10s forwards;
   animation-delay: 10s;
 }
 
-.fish-package2 {
+.fish-package2-animation {
   animation: fishPackageAnimation2 10s forwards;
-  animation-delay: 11s;
+  animation-delay: 5.2s;
 }
 
 .conveyor-belt {
