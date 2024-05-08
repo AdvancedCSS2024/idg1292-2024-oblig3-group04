@@ -18,6 +18,8 @@ const observer = new IntersectionObserver(entries=>{
     const isFish = entry.target.classList.contains("conveyor-fish-two")
     const isPackFish = entry.target.classList.contains("fish-package")
     const isPackFish2 = entry.target.classList.contains("fish-package2")
+    const isHand = entry.target.classList.contains("hand")
+    const isArm = entry.target.classList.contains("arm")
 
     if(entry.isIntersecting && isLeftDoor){
             entry.target.classList.add("animation-left");
@@ -49,6 +51,19 @@ const observer = new IntersectionObserver(entries=>{
     else{
       entry.target.classList.remove("fish-package2-animation")
     }
+
+    
+    if(entry.isIntersecting && isHand)
+    entry.target.classList.add(".hand-animation");
+    else{
+      entry.target.classList.remove(".hand-animation")
+    }
+    if(entry.isIntersecting && isArm)
+    entry.target.classList.add("arm-animation");
+    else{
+      entry.target.classList.remove("arm-animation")
+    }
+
 
     if (entry.isIntersecting && isBoat){
       gsap.from(".boat", {duration:3, rotate:'-5%', repeat:-1});

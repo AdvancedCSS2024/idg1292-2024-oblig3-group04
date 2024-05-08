@@ -438,6 +438,9 @@ section {
   left: 25vw;
   width: 17vw;
   z-index: 5;
+}
+
+.hand-animation {
   animation: armOne 1s ease-in forwards;
 }
 
@@ -446,6 +449,9 @@ section {
   top: 20vw;
   left: 8vw;
   width: 35vw;
+}
+
+.arm-animation {
   animation: armTwo 1s ease-in 2s forwards;
 }
 
