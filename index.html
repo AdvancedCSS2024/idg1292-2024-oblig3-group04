@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="js/java.js" defer></script>
-    <script src="js/java2.js" defer></script>
     <script src="js/script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
 </head>
 <body>
    <main class="main">
+    <div class="container__logo">
+      <img class="container__logo-SDG12" src="assets/svg/12SDG__logo.svg" alt="SDG-12 logo">
+    </div>
     <div class="main__section">
        <section class="section-one">
         <div class="wrapper__sky">
@@ -56,7 +57,7 @@
         <div class="container__ship">
           <img class="ship-top" src="assets/SVG/ship-topdown.svg" alt="top of the ship" />
           <img class="animate waterflow waterflow-top--left" src="assets/SVG/waterflow.svg"alt="water wave"/>
-          <img class="animate waterflow waterflow-to--pmiddle" src="assets/SVG/waterflow.svg" alt="water wave"/>
+          <img class="animate waterflow waterflow-top--middle" src="assets/SVG/waterflow.svg" alt="water wave"/>
           <img class="animate waterflow waterflow-top--right"src="assets/SVG/waterflow.svg"alt="water wave"/>
           <img class="animate waterflow waterflow-right--middle" src="assets/SVG/waterflow.svg"alt="water wave"/>
           <img class="animate waterflow waterflow-right"src="assets/SVG/waterflow.svg"alt="water wave"/>
@@ -89,9 +90,9 @@
         <img class="conveyor-belt" src="assets/SVG/conveyor-belt.svg" alt="conveyor belt">
       </div>
       <div class="section-six__fish-wrapper">
-        <img class="conveyor-fish-two" src="assets/SVG/fish-on-conveyor-second.svg" alt="fish on conveyor belt">
-        <img class="fish-package-conveyor fish-package" src="assets/SVG/fish-package.svg" alt="fish package">
-        <img class="fish-package-conveyor fish-package2" src="assets/SVG/fish-package.svg" alt="fish package">
+        <img class="animate conveyor-fish-two" src="assets/SVG/fish-on-conveyor-second.svg" alt="fish on conveyor belt">
+        <img class="animate fish-package-conveyor fish-package" src="assets/SVG/fish-package.svg" alt="fish package">
+        <img class="animate fish-package-conveyor fish-package2" src="assets/SVG/fish-package.svg" alt="fish package">
       </div>
     </section>
 
@@ -130,6 +131,9 @@
         <img class="fish__store fish__store-other fish__store-other--1" src="assets/SVG/fishpack.svg" alt="">
         <img class="fish__store fish__store-other fish__store-other--2" src="assets/SVG/fishpack.svg" alt="">
       </div>
+      <!-- text to have in the last textbox
+        <p>Choose products that champion sustainability, supporting their carbon conscious voyage from start to shelf</p>
+        -->
     </section>
    </main>
    

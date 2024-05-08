@@ -1,8 +1,9 @@
-1. preparation: 
+1. preparation and license: 
 For our project, we've chosen to focus on Sustainable Development Goal 12, which promotes responsible consumption and production. Our story highlights an interesting issue: Norwegian fish that are caught locally, sent to China for processing, and then returned to Norway to be sold in grocery stores.
 
 Initially, we brainstormed and drew a storyboard to outline our story. We created designs for key elements like maps and boats using Adobe Illustrator to visualize the stages of our fish’s journey. In addition, to spare some time for more complex drawings, we used an AI generator in Illustrator to create backgrounds, which made it easier to sketch out elements like hands.
 
+Since all of ou illustrations were made my us, the only image that we exported for our website is SDG12 - logo. At sustainabledevelopment website it is said that it is free to download and use as long as a link is included: https://www.un.org/sustainabledevelopment/news/communications-material/
 
 2. animation part: 
 Animation for boat follwoing path on the map: * sources i used to make boat follow a path: 
@@ -20,9 +21,10 @@ Animation for boat follwoing path on the map: * sources i used to make boat foll
 Additionally we incorporated Intersection Observer API' to make our webpage more interactive.This tool helps us show or hide content based on how a user scrolls
 our webpage to guide users through our narrative. For instance, in specific sections, we implemented scroll-based animations and transitions to enhance the storytelling experience. 
 
-We also took into considerations about WCAG and tried to make animations in slower pace. This can help people with motion sickness for instance to feel comfortbale while scrolly at the webpage. 
+We also took into considerations about WCAG and tried to make animations in slower pace. This can help people with motion sickness for instance to feel comfortbale while scrolly at the webpage. And we also used 'prefers-reduced-motion' 
 
-// I encountered an issue where the boat would disappear at some certain parts of its path. to adress this, i adjusted the viewbox attribute in the SVG from its orginal value of 979 to 1200. 
+// skrive mer om prefers-reduced-motion'
+
+I encountered an issue where the boat would disappear at some certain parts of its path. to adress this, i adjusted the viewbox attribute in the SVG from its orginal value of 979 to 1200. 
 
 
-//write about gsap for making text box to pop up//
