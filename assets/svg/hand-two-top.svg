@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.81 150.7">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #f4d3c1;
-        stroke-width: 0px;
-      }
-    </style>
-  </defs>
-  <g id="Hand2-top">
-    <path id="Hand2-top-2" data-name="Hand2-top" class="cls-1" d="M27.81,57C42.81,48,64.81,0,64.81,0c7.43.23,9.81,11.81,11,20s-8,38-8,38l-10.5,23.95,19.5,66.05s-38.36,6.08-49,0C15.92,141.21,0,100.84,0,100.84c0,0,16.68-37.17,27.81-43.84Z"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 2" viewBox="0 0 76.8 150.7"><path d="M27.8 57c15-9 37-57 37-57 7.4.2 9.8 11.8 11 20s-8 38-8 38L57.3 82l19.5 66s-38.3 6-49 0C16 141.2 0 100.8 0 100.8S16.7 63.7 27.8 57Z" data-name="Hand2-top" style="fill:#f4d3c1;stroke-width:0"/></svg>
