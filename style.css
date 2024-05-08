@@ -132,7 +132,6 @@ html,body{
       height: 90vw;
       top: 0vw;
       z-index: 1;
-      border: 2px solid black;
    }
    .fish {
       position: absolute;
@@ -281,7 +280,7 @@ html,body{
 .circle1,
 .circle3{
     width: 2%;
-    top: 16vw;
+    top: 17vw;
     left: 12%;
 }
 .circle2,
@@ -298,6 +297,7 @@ html,body{
     left: 2%;
     z-index: 2;
 }
+
 /* end of section5 - wolrdmap */
 
 /*scene 6 factory */
@@ -368,6 +368,7 @@ html,body{
     background-blend-mode: hue;
     top: -1vw;
 }
+
 /*end opf scene of map*/
  
 /*scene 8 - grocery shop*/
