@@ -118,21 +118,17 @@ section {
 .sky {
   width: 105%;
 }
-
 .sky-one {
   z-index: 4;
 }
-
 .sky-two {
   z-index: 3;
   top: 41vw;
 }
-
 .sky-three {
   z-index: 2;
   top: 46vw;
 }
-
 .sky-four {
   z-index: 1;
   top: 50vw;
@@ -141,26 +137,21 @@ section {
 .water {
   width: 105%;
 }
-
 .water__wrapper {
   overflow-x: hidden;
 }
-
 .water-four {
   z-index: 5;
   top: 61vw;
 }
-
 .water-three {
   top: 68vw;
   z-index: 6;
 }
-
 .water-two {
   z-index: 8;
   top: 75vw;
 }
-
 .water-one {
   z-index: 9;
   top: 82.8vw;
@@ -168,7 +159,7 @@ section {
 
 /*scene 2*/
 .section-two {
-  background: linear-gradient(to bottom, #6161d1 6%, grey 23%, grey 0%);
+  background: linear-gradient(to bottom, #6161D1 6%, grey 23%, grey 0%);
   height: 100vw;
   top: 0vw;
   z-index: 1;
@@ -463,5 +454,4 @@ section {
 .fish-pickingUp {
   top: 22.6vw;
   left: 25vw;
-  width: 11vw;
 }/*# sourceMappingURL=styles.css.map */

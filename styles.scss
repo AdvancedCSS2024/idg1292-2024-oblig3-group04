@@ -89,105 +89,101 @@ section {
     opacity: 1;
     left: 21%;
   }
-}
-/*1 scene*/
-.main__section {
-  height: 98.5vw;
-}
+  }
+  
+  /*1 scene*/
+  .main__section{
+    height: 98.5vw;
+  }
+  .section-one{ 
+    max-width: 100%;
+    height: 98.5vw;
+    overflow-x: hidden;
+  }
+  .sky,
+  .water,
+  .boat {
+    position: absolute;
+    overflow-x: hidden;
+  }
+  
+  .boat {
+    z-index: 7;
+    top: 60vw;
+    left: 30vw;
+    width: 32vw;
+  }
+  .sky{
+    width: 105%;
 
-.section-one {
-  max-width: 100%;
-  height: 98.5vw;
-  overflow-x: hidden;
-}
-
-.sky,
-.water,
-.boat {
-  position: absolute;
-  overflow-x: hidden;
-}
-
-.boat {
-  z-index: 7;
-  top: 60vw;
-  left: 30vw;
-  width: 32vw;
-}
-
-.sky {
-  width: 105%;
-}
-.sky-one {
-  z-index: 4;
-}
-.sky-two {
-  z-index: 3;
-  top: 41vw;
-}
-.sky-three {
-  z-index: 2;
-  top: 46vw;
-}
-.sky-four {
-  z-index: 1;
-  top: 50vw;
-}
-
-.water {
-  width: 105%;
-}
-.water__wrapper {
-  overflow-x: hidden;
-}
-.water-four {
-  z-index: 5;
-  top: 61vw;
-}
-.water-three {
-  top: 68vw;
-  z-index: 6;
-}
-.water-two {
-  z-index: 8;
-  top: 75vw;
-}
-.water-one {
-  z-index: 9;
-  top: 82.8vw;
-}
-
-/*scene 2*/
-.section-two {
-  background: linear-gradient(to bottom, #6161d1 6%, grey 23%, grey 0%);
-  height: 100vw;
-  top: 0vw;
-  z-index: 1;
-}
-
-.fish-box__image {
-  position: absolute;
-  width: 50vw;
-  top: 37vw;
-  left: 22vw;
-}
-
-/* end of scene 2*/
-/* scene 3 */
-.section-three {
-  height: 115vw;
-  top: -1vw;
-  position: relative;
-  background: linear-gradient(to bottom, grey 4%, #c8bcc7 23%);
-}
-
-.open-box {
-  position: absolute;
-  width: 50vw;
-  top: 28vw;
-  left: 27vw;
-  z-index: 2;
-}
+    &-one{
+    z-index:4;
+    }
+    &-two{
+    z-index: 3;
+    top: 41vw;  
+    }
+    &-three{
+    z-index: 2;
+    top: 46vw; 
+    }
+    &-four{
+     z-index: 1;
+    top: 50vw;   
+    }
+  }
+ 
+  .water {
+    width: 105%;
+    &__wrapper{
+     overflow-x: hidden;
+    }
+    &-four{
+      z-index: 5;
+      top: 61vw;
+    }
+    &-three{
+     top: 68vw;
+     z-index: 6;
+    }
+    &-two{
+     z-index: 8;
+     top: 75vw;
+    }
+    &-one{
+        z-index: 9;
+        top: 82.8vw;
+    }
+  }
+ 
+  /*scene 2*/
+  .section-two{
+      background: linear-gradient(to bottom, #6161D1 6%, grey 23%, grey 0%);
+      height: 100vw;
+      top: 0vw;
+      z-index: 1;
+   }
+   .fish-box__image {
+      position: absolute;
+      width: 50vw;
+      top: 37vw;
+      left: 22vw;
+    }
+  /* end of scene 2*/
+  
+  /* scene 3 */
+  .section-three{
+    height: 115vw;
+    top: -1vw;
+    position: relative;  background: linear-gradient(to bottom, grey 4%, #c8bcc7 23%);
+  }
+  .open-box {
+    position: absolute;
+    width: 50vw;
+    top: 28vw;
+    left: 27vw;
+    z-index: 2;
+  }
 
 .door {
   position: absolute;
@@ -441,5 +437,4 @@ section {
 .fish-pickingUp {
   top: 22.6vw;
   left: 25vw;
-  width: 11vw;
 }
