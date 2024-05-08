@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   height: 100%;
 }
@@ -89,18 +90,6 @@ section {
     left: 21%;
   }
 }
-.main, section {
-  position: relative;
-}
-
-.container__logo-SDG12 {
-  width: 14vw;
-  position: fixed;
-  z-index: 11;
-  margin: 1%;
-  opacity: 0.6;
-}
-
 /*1 scene*/
 .main__section {
   height: 98.5vw;
@@ -204,10 +193,14 @@ section {
   position: absolute;
   width: 14vw;
 }
+
 .door--left {
   left: 26vw;
   top: 50.5vw;
   z-index: 3;
+}
+
+.animation-left {
   animation: slideLeft 3s infinite ease;
 }
 
@@ -215,6 +208,9 @@ section {
   right: 33vw;
   top: 50.5vw;
   z-index: 3;
+}
+
+.animation-right {
   animation: slideRight 3s infinite ease;
 }
 
@@ -266,38 +262,47 @@ section {
   z-index: 2;
   position: absolute;
 }
+
 .waterflow-top--left {
   top: 17vw;
   left: 27vw;
 }
+
 .waterflow-top--left {
   top: 17vw;
   left: 27vw;
 }
+
 .waterflow-top--middle {
   top: 11vw;
   left: 41vw;
 }
+
 .waterflow-right--middle {
   top: 4vw;
   left: 73vw;
 }
+
 .waterflow-top--right {
   top: 11vw;
   left: 76vw;
 }
+
 .waterflow-right {
   top: 24vw;
   left: 75vw;
 }
+
 .waterflow-bottom--right {
   top: 33vw;
   left: 65vw;
 }
+
 .waterflow-bottom--middle {
   top: 37vw;
   left: 53vw;
 }
+
 .waterflow-bottom--left {
   top: 2vw;
   left: 54vw;
@@ -449,5 +454,4 @@ section {
 .fish-pickingUp {
   top: 22.6vw;
   left: 25vw;
-  width: 11vw;
 }/*# sourceMappingURL=styles.css.map */
