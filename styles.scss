@@ -8,6 +8,14 @@ section {
   position: relative;
 }
 
+.container__logo-SDG12{
+    position: fixed;
+    width: 12%;
+    opacity: 0.6;
+    z-index: 11;
+    margin: 1.5%;
+}
+
 /*all animations */
 @keyframes slideLeft {
   0% {
@@ -165,9 +173,9 @@ section {
    }
    .fish-box__image {
       position: absolute;
-      width: 50vw;
+      width: 37vw;
       top: 37vw;
-      left: 22vw;
+      right: 5vw;
     }
   /* end of scene 2*/
   
@@ -253,42 +261,38 @@ section {
   width: 10vw;
   z-index: 2;
   position: absolute;
-}
-.waterflow-top--left {
-  top: 17vw;
-  left: 27vw;
-}
-.waterflow-top--left {
-  top: 17vw;
-  left: 27vw;
-}
-.waterflow-top--middle {
-  top: 11vw;
-  left: 41vw;
-}
-.waterflow-right--middle {
-  top: 4vw;
-  left: 73vw;
-}
-.waterflow-top--right {
-  top: 11vw;
-  left: 76vw;
-}
-.waterflow-right {
-  top: 24vw;
-  left: 75vw;
-}
-.waterflow-bottom--right {
-  top: 33vw;
-  left: 65vw;
-}
-.waterflow-bottom--middle {
-  top: 37vw;
-  left: 53vw;
-}
-.waterflow-bottom--left {
-  top: 2vw;
-  left: 54vw;
+  &-top--left {
+    top: 20vw;
+    left: 27vw;
+  }
+  &-top--middle {
+    top: 10vw;
+    left: 38vw;
+  }
+  &-right--middle {
+    top: 2vw;
+    left: 73vw;
+  }
+  &-top--right {
+    top: 11vw;
+    left: 76vw;
+  }
+  &-right {
+    top: 24vw;
+    left: 75vw;
+  }
+  &-bottom--right {
+    top: 33vw;
+    left: 65vw;
+  }
+  &-bottom--middle {
+      top: 38vw;
+      left: 53vw;
+    }
+  &-bottom--left {
+      top: 4vw;
+      left: 54vw;
+  }
 }
 
 .squiggle {
