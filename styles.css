@@ -388,7 +388,7 @@ section {
 .circle1,
 .circle3 {
   width: 2%;
-  top: 12vw;
+  top: 17vw;
   left: 12%;
 }
 
@@ -396,13 +396,13 @@ section {
 .circle4 {
   z-index: 1;
   width: 3%;
-  top: 34vw;
+  top: 40vw;
   right: 22%;
 }
 
 .path {
   max-width: 100vw;
-  top: 13vw;
+  top: 18vw;
   left: 2%;
   z-index: 2;
 }
@@ -501,8 +501,8 @@ section {
 }
 
 .store-top {
-  top: 16vw;
-  left: 5vw;
+  top: 13vw;
+  left: 4.5vw;
   width: 37vw !important;
   z-index: 3;
 }
@@ -512,7 +512,7 @@ section {
 }
 .fish__store-pickUp {
   display: none;
-  top: 24vw;
+  top: 20vw;
   left: 8vw;
   z-index: 2;
 }
@@ -520,10 +520,10 @@ section {
   left: 34vw;
 }
 .fish__store-other--1 {
-  top: 22vw;
+  top: 20vw;
 }
 .fish__store-other--2 {
-  top: 20vw;
+  top: 17vw;
 }
 
 /* Use this class to switch between what to show Hand and fish__store-pickUp or arm */
